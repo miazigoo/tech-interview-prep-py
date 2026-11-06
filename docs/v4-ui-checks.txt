@@ -1,0 +1,1 @@
+PASS: compact controls; note saved on background/restart; empty readiness; ordered chain resumes; separate self-assessment; Python/SQL/case hint stages; assisted success remains mistake; interview follow-up

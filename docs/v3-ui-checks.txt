@@ -1,0 +1,3 @@
+PASS: code mistake, new example and explicit successful retry
+PASS: cases and saved weak case
+PASS: successful assisted SQL remains in mistakes

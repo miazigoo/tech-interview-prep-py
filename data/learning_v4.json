@@ -1,0 +1,2708 @@
+{
+  "chains": [
+    {
+      "id": "path-objects",
+      "title": "Объекты, ссылки и копирование",
+      "steps": [
+        {
+          "card_id": "py-middle-002",
+          "connection": "Сначала разделим значение и идентичность"
+        },
+        {
+          "card_id": "py-middle-003",
+          "connection": "Теперь посмотрим, что можно менять"
+        },
+        {
+          "card_id": "py-middle-005",
+          "connection": "Связь объектов важна при передаче аргументов"
+        },
+        {
+          "card_id": "py-middle-004",
+          "connection": "Общее состояние проявляется в значениях по умолчанию"
+        },
+        {
+          "card_id": "py-middle-027",
+          "connection": "Разберём копирование вложенных объектов"
+        },
+        {
+          "card_id": "py-middle-028",
+          "connection": "Проверим повторение ссылок в матрице"
+        }
+      ]
+    },
+    {
+      "id": "path-async",
+      "title": "От ожидания к конкурентным задачам",
+      "steps": [
+        {
+          "card_id": "py-middle-045",
+          "connection": "Конкурентность и параллелизм — разные задачи"
+        },
+        {
+          "card_id": "py-middle-046",
+          "connection": "Выберем модель выполнения"
+        },
+        {
+          "card_id": "py-middle-047",
+          "connection": "Посмотрим, где await отдаёт управление"
+        },
+        {
+          "card_id": "py-middle-048",
+          "connection": "Создадим отдельные задачи"
+        },
+        {
+          "card_id": "py-middle-049",
+          "connection": "Уберём блокировку цикла событий"
+        },
+        {
+          "card_id": "py-middle-052",
+          "connection": "Ограничим нагрузку"
+        },
+        {
+          "card_id": "py-middle-053",
+          "connection": "Завершим задачи корректно"
+        }
+      ]
+    },
+    {
+      "id": "path-orders",
+      "title": "Транзакции и надёжный заказ",
+      "steps": [
+        {
+          "card_id": "py-middle-056",
+          "connection": "Начнём с гарантий транзакции"
+        },
+        {
+          "card_id": "py-middle-057",
+          "connection": "Выберем нужную изоляцию"
+        },
+        {
+          "card_id": "py-middle-063",
+          "connection": "Защитим конкурентное изменение"
+        },
+        {
+          "card_id": "py-middle-115",
+          "connection": "Применим защиту к остатку товара"
+        },
+        {
+          "card_id": "py-middle-067",
+          "connection": "Повтор запроса должен быть безопасен"
+        },
+        {
+          "card_id": "py-middle-055",
+          "connection": "Соединим запись в БД и доставку задачи"
+        }
+      ]
+    },
+    {
+      "id": "path-orm",
+      "title": "От ORM к быстрому запросу",
+      "steps": [
+        {
+          "card_id": "py-middle-072",
+          "connection": "QuerySet сначала описывает будущий запрос"
+        },
+        {
+          "card_id": "py-middle-061",
+          "connection": "Найдём проблему N+1"
+        },
+        {
+          "card_id": "py-middle-071",
+          "connection": "Выберем способ предзагрузки"
+        },
+        {
+          "card_id": "py-middle-059",
+          "connection": "Поймём роль индекса"
+        },
+        {
+          "card_id": "py-middle-060",
+          "connection": "Подберём составной индекс"
+        },
+        {
+          "card_id": "py-middle-062",
+          "connection": "Проверим фактический план"
+        }
+      ]
+    },
+    {
+      "id": "path-api",
+      "title": "Контракт и защита API",
+      "steps": [
+        {
+          "card_id": "py-middle-081",
+          "connection": "Зафиксируем семантику операции"
+        },
+        {
+          "card_id": "py-middle-082",
+          "connection": "Согласуем ответы и ошибки"
+        },
+        {
+          "card_id": "py-middle-085",
+          "connection": "Проверим личность и права"
+        },
+        {
+          "card_id": "py-middle-084",
+          "connection": "Выберем хранение сессии или токена"
+        },
+        {
+          "card_id": "py-middle-086",
+          "connection": "Защитим обработку недоверенного входа"
+        },
+        {
+          "card_id": "py-middle-087",
+          "connection": "Отделим CORS от авторизации"
+        },
+        {
+          "card_id": "py-middle-089",
+          "connection": "Ограничим нагрузку"
+        }
+      ]
+    },
+    {
+      "id": "path-delivery",
+      "title": "Обновление и эксплуатация",
+      "steps": [
+        {
+          "card_id": "py-middle-077",
+          "connection": "Схема базы тоже меняется"
+        },
+        {
+          "card_id": "py-middle-105",
+          "connection": "Сохраним совместимость при обновлении"
+        },
+        {
+          "card_id": "py-middle-099",
+          "connection": "Подготовим воспроизводимую сборку"
+        },
+        {
+          "card_id": "py-middle-100",
+          "connection": "Отделим готовность от живости"
+        },
+        {
+          "card_id": "py-middle-101",
+          "connection": "Учтём отдельную память процессов"
+        },
+        {
+          "card_id": "py-middle-103",
+          "connection": "Завершим работу без потери задач"
+        }
+      ]
+    },
+    {
+      "id": "path-frameworks",
+      "title": "FastAPI и безопасные миграции",
+      "steps": [
+        {
+          "card_id": "fastapi-001",
+          "connection": "Выберем синхронную или асинхронную границу"
+        },
+        {
+          "card_id": "fastapi-003",
+          "connection": "Организуем время жизни сессии"
+        },
+        {
+          "card_id": "fastapi-006",
+          "connection": "Подготовим ресурсы приложения"
+        },
+        {
+          "card_id": "fastapi-015",
+          "connection": "Вынесем миграции из запуска worker"
+        },
+        {
+          "card_id": "alembic-002",
+          "connection": "Укажем полное описание моделей"
+        },
+        {
+          "card_id": "alembic-003",
+          "connection": "Проверим сгенерированный план"
+        },
+        {
+          "card_id": "alembic-010",
+          "connection": "Согласуем схему со старой и новой версией"
+        }
+      ]
+    }
+  ],
+  "followups": {
+    "py-middle-001": [
+      {
+        "id": "py-middle-001~py-middle-006",
+        "card_id": "py-middle-006",
+        "question": "Что такое GIL?",
+        "answer": "Global Interpreter Lock в обычной сборке CPython ограничивает одновременное выполнение Python-байткода несколькими потоками в одном интерпретаторе. Для I/O-потоков это не отменяет пользы от threading; для CPU-bound задач часто используют процессы или нативный код, освобождающий GIL. Существуют также сборки CPython без GIL, поэтому важно уточнять среду.",
+        "question_audio": "audio/py-middle-006_question.mp3"
+      },
+      {
+        "id": "py-middle-001~py-middle-007",
+        "card_id": "py-middle-007",
+        "question": "Как CPython управляет памятью и собирает мусор?",
+        "answer": "CPython в основном использует подсчёт ссылок; сборщик циклов дополнительно обнаруживает недостижимые циклические структуры. Освобождение объекта не гарантирует немедленного возврата памяти ОС: аллокаторы могут держать память для повторного использования.",
+        "question_audio": "audio/py-middle-007_question.mp3"
+      }
+    ],
+    "py-middle-002": [
+      {
+        "id": "py-middle-002~py-middle-003",
+        "card_id": "py-middle-003",
+        "question": "Что значит mutable и immutable? Какие типы относятся к ним?",
+        "answer": "Изменяемые объекты можно менять без замены самого объекта: list, dict, set. Неизменяемые: int, float, str, bytes, tuple, frozenset. При этом tuple может содержать изменяемый список: неизменяем сам кортеж, но не обязательно его содержимое.",
+        "question_audio": "audio/py-middle-003_question.mp3"
+      },
+      {
+        "id": "py-middle-002~py-middle-005",
+        "card_id": "py-middle-005",
+        "question": "Что происходит при передаче аргументов в функцию?",
+        "answer": "Python передаёт ссылки на объекты (точнее, присваивает локальным параметрам переданные объекты). Мутация переданного списка будет видна вызывающему коду. Переприсваивание локального параметра на другой объект внешнюю переменную не меняет.",
+        "question_audio": "audio/py-middle-005_question.mp3"
+      }
+    ],
+    "py-middle-003": [
+      {
+        "id": "py-middle-003~py-middle-005",
+        "card_id": "py-middle-005",
+        "question": "Что происходит при передаче аргументов в функцию?",
+        "answer": "Python передаёт ссылки на объекты (точнее, присваивает локальным параметрам переданные объекты). Мутация переданного списка будет видна вызывающему коду. Переприсваивание локального параметра на другой объект внешнюю переменную не меняет.",
+        "question_audio": "audio/py-middle-005_question.mp3"
+      },
+      {
+        "id": "py-middle-003~py-middle-004",
+        "card_id": "py-middle-004",
+        "question": "Почему нельзя использовать изменяемое значение по умолчанию?",
+        "answer": "Выражение значения по умолчанию вычисляется один раз при определении функции; один список может переиспользоваться разными вызовами. Для независимого списка используйте None и создавайте новый внутри функции.",
+        "question_audio": "audio/py-middle-004_question.mp3"
+      }
+    ],
+    "py-middle-004": [
+      {
+        "id": "py-middle-004~py-middle-005",
+        "card_id": "py-middle-005",
+        "question": "Что происходит при передаче аргументов в функцию?",
+        "answer": "Python передаёт ссылки на объекты (точнее, присваивает локальным параметрам переданные объекты). Мутация переданного списка будет видна вызывающему коду. Переприсваивание локального параметра на другой объект внешнюю переменную не меняет.",
+        "question_audio": "audio/py-middle-005_question.mp3"
+      },
+      {
+        "id": "py-middle-004~py-middle-031",
+        "card_id": "py-middle-031",
+        "question": "Что такое closure и late binding?",
+        "answer": "Замыкание сохраняет связь с переменными внешней области видимости. В цикле вложенные функции часто обращаются к одной и той же переменной, значение которой меняется. Чтобы зафиксировать текущее значение, используйте аргумент по умолчанию или фабрику.",
+        "question_audio": "audio/py-middle-031_question.mp3"
+      }
+    ],
+    "py-middle-005": [
+      {
+        "id": "py-middle-005~py-middle-004",
+        "card_id": "py-middle-004",
+        "question": "Почему нельзя использовать изменяемое значение по умолчанию?",
+        "answer": "Выражение значения по умолчанию вычисляется один раз при определении функции; один список может переиспользоваться разными вызовами. Для независимого списка используйте None и создавайте новый внутри функции.",
+        "question_audio": "audio/py-middle-004_question.mp3"
+      },
+      {
+        "id": "py-middle-005~py-middle-027",
+        "card_id": "py-middle-027",
+        "question": "Чем shallow copy отличается от deepcopy?",
+        "answer": "Поверхностное копирование создаёт новый внешний контейнер, но вложенные объекты остаются общими. deepcopy рекурсивно копирует вложенные объекты там, где это возможно, и может быть дорогим или нежелательным для соединений и ресурсов.",
+        "question_audio": "audio/py-middle-027_question.mp3"
+      }
+    ],
+    "py-middle-006": [
+      {
+        "id": "py-middle-006~py-middle-045",
+        "card_id": "py-middle-045",
+        "question": "В чём разница между concurrency и parallelism?",
+        "answer": "Concurrency — организация одновременного прогресса нескольких задач, parallelism — фактическое выполнение одновременно на нескольких вычислительных ресурсах. asyncio обеспечивает кооперативную конкурентность; процессы позволяют использовать несколько ядер для CPU-bound нагрузки.",
+        "question_audio": "audio/py-middle-045_question.mp3"
+      },
+      {
+        "id": "py-middle-006~py-middle-046",
+        "card_id": "py-middle-046",
+        "question": "Когда выбирать threading, multiprocessing или asyncio?",
+        "answer": "threading полезен для блокирующего I/O и синхронных библиотек; multiprocessing — для тяжёлых вычислений; asyncio — для большого числа I/O-операций с async-библиотеками. На выбор влияют стоимость сериализации, блокировки, доступные клиенты и модель развёртывания.",
+        "question_audio": "audio/py-middle-046_question.mp3"
+      }
+    ],
+    "py-middle-007": [
+      {
+        "id": "py-middle-007~py-middle-008",
+        "card_id": "py-middle-008",
+        "question": "Что такое LEGB и зачем global/nonlocal?",
+        "answer": "Разрешение имён идёт Local → Enclosing → Global → Builtins. nonlocal позволяет переназначать имя из охватывающей функции, global — имя уровня модуля. По умолчанию присваивание внутри функции делает имя локальным.",
+        "question_audio": "audio/py-middle-008_question.mp3"
+      },
+      {
+        "id": "py-middle-007~py-middle-009",
+        "card_id": "py-middle-009",
+        "question": "Что такое truthy/falsy?",
+        "answer": "В условии False-подобными считаются None, False, ноль, пустые строки и коллекции, а также объекты с соответствующим __bool__ или __len__. При этом if value: и if value is None: отвечают на разные вопросы: второй не смешивает отсутствие значения с 0 или пустой строкой.",
+        "question_audio": "audio/py-middle-009_question.mp3"
+      }
+    ],
+    "py-middle-008": [
+      {
+        "id": "py-middle-008~py-middle-031",
+        "card_id": "py-middle-031",
+        "question": "Что такое closure и late binding?",
+        "answer": "Замыкание сохраняет связь с переменными внешней области видимости. В цикле вложенные функции часто обращаются к одной и той же переменной, значение которой меняется. Чтобы зафиксировать текущее значение, используйте аргумент по умолчанию или фабрику.",
+        "question_audio": "audio/py-middle-031_question.mp3"
+      },
+      {
+        "id": "py-middle-008~py-middle-033",
+        "card_id": "py-middle-033",
+        "question": "Что такое *args и **kwargs?",
+        "answer": "*args собирает дополнительные позиционные аргументы в tuple, **kwargs — именованные в dict. Их стоит применять, когда функция действительно должна принимать переменный набор аргументов, а не скрывать неясный интерфейс.",
+        "question_audio": "audio/py-middle-033_question.mp3"
+      }
+    ],
+    "py-middle-009": [
+      {
+        "id": "py-middle-009~py-middle-010",
+        "card_id": "py-middle-010",
+        "question": "Как работают исключения и finally?",
+        "answer": "try/except перехватывает подходящие исключения; else исполняется, если блок try завершился без исключения; finally выполняется при выходе почти всегда, включая return. Не стоит возвращать значение из finally: оно может скрыть исключение или исходный return.",
+        "question_audio": "audio/py-middle-010_question.mp3"
+      },
+      {
+        "id": "py-middle-009~py-middle-011",
+        "card_id": "py-middle-011",
+        "question": "Чем отличается raise от raise exc?",
+        "answer": "Внутри except голый raise повторно выбрасывает исходное исключение, обычно сохраняя исходный traceback. raise exc выбрасывает объект заново и добавляет текущую точку в traceback. Для причинной связи применяют raise NewError(...) from exc.",
+        "question_audio": "audio/py-middle-011_question.mp3"
+      }
+    ],
+    "py-middle-010": [
+      {
+        "id": "py-middle-010~py-middle-011",
+        "card_id": "py-middle-011",
+        "question": "Чем отличается raise от raise exc?",
+        "answer": "Внутри except голый raise повторно выбрасывает исходное исключение, обычно сохраняя исходный traceback. raise exc выбрасывает объект заново и добавляет текущую точку в traceback. Для причинной связи применяют raise NewError(...) from exc.",
+        "question_audio": "audio/py-middle-011_question.mp3"
+      },
+      {
+        "id": "py-middle-010~py-middle-012",
+        "card_id": "py-middle-012",
+        "question": "Что такое hashable и почему список не ключ словаря?",
+        "answer": "Ключ dict и элемент set должны иметь согласованный и стабильный в процессе хранения хеш. list изменяем и не хешируем. Неизменяемость сама по себе не достаточна: tuple со списком внутри тоже не хешируется; пользовательский объект может иметь свой __hash__.",
+        "question_audio": "audio/py-middle-012_question.mp3"
+      }
+    ],
+    "py-middle-011": [
+      {
+        "id": "py-middle-011~py-middle-012",
+        "card_id": "py-middle-012",
+        "question": "Что такое hashable и почему список не ключ словаря?",
+        "answer": "Ключ dict и элемент set должны иметь согласованный и стабильный в процессе хранения хеш. list изменяем и не хешируем. Неизменяемость сама по себе не достаточна: tuple со списком внутри тоже не хешируется; пользовательский объект может иметь свой __hash__.",
+        "question_audio": "audio/py-middle-012_question.mp3"
+      },
+      {
+        "id": "py-middle-011~py-middle-013",
+        "card_id": "py-middle-013",
+        "question": "Какие гарантии даёт порядок в dict?",
+        "answer": "В современных версиях Python словарь сохраняет порядок вставки ключей. Это не означает сортировку по ключу. Повторное присвоение уже существующему ключу обычно не меняет его позицию; удаление и новая вставка размещают ключ в конце.",
+        "question_audio": "audio/py-middle-013_question.mp3"
+      }
+    ],
+    "py-middle-012": [
+      {
+        "id": "py-middle-012~py-middle-021",
+        "card_id": "py-middle-021",
+        "question": "Какова сложность основных операций dict?",
+        "answer": "Получение, вставка и удаление по ключу имеют ожидаемую сложность O(1), но теоретически в худшем случае возможна O(n) при неблагоприятных коллизиях и иных условиях. Операции зависят от корректного __hash__ и __eq__.",
+        "question_audio": "audio/py-middle-021_question.mp3"
+      },
+      {
+        "id": "py-middle-012~py-middle-037",
+        "card_id": "py-middle-037",
+        "question": "Для чего нужны __str__, __repr__ и __eq__?",
+        "answer": "__str__ задаёт удобный текст для пользователя, __repr__ — диагностическое представление, __eq__ — семантику сравнения значений. Изменение __eq__ может повлиять на хешируемость класса: контракты __eq__ и __hash__ должны быть согласованы.",
+        "question_audio": "audio/py-middle-037_question.mp3"
+      }
+    ],
+    "py-middle-013": [
+      {
+        "id": "py-middle-013~py-middle-014",
+        "card_id": "py-middle-014",
+        "question": "Как устроены аннотации типов в Python?",
+        "answer": "Подсказки типов улучшают контракты, IDE и статическую проверку (mypy/pyright), но по умолчанию не обеспечивают runtime-валидацию. Optional[T] обозначает T | None, а не «параметр необязателен». В FastAPI/Pydantic типы могут использоваться для отдельной проверки входных данных.",
+        "question_audio": "audio/py-middle-014_question.mp3"
+      },
+      {
+        "id": "py-middle-013~py-middle-015",
+        "card_id": "py-middle-015",
+        "question": "Что такое duck typing и Protocol?",
+        "answer": "Duck typing фокусируется на доступных операциях, а не на наследовании. typing.Protocol позволяет статически описать структурный интерфейс: объект подходит, если реализует требуемые методы и атрибуты, даже без явного наследования.",
+        "question_audio": "audio/py-middle-015_question.mp3"
+      }
+    ],
+    "py-middle-014": [
+      {
+        "id": "py-middle-014~py-middle-015",
+        "card_id": "py-middle-015",
+        "question": "Что такое duck typing и Protocol?",
+        "answer": "Duck typing фокусируется на доступных операциях, а не на наследовании. typing.Protocol позволяет статически описать структурный интерфейс: объект подходит, если реализует требуемые методы и атрибуты, даже без явного наследования.",
+        "question_audio": "audio/py-middle-015_question.mp3"
+      },
+      {
+        "id": "py-middle-014~py-middle-074",
+        "card_id": "py-middle-074",
+        "question": "Как работает валидация в FastAPI/Django Ninja?",
+        "answer": "Обычно схемы на основе Pydantic валидируют входные данные и сериализуют выходные. Типы Python используются для описания контрактов, но не заменяют проверку авторизации и бизнес-ограничений. Ошибка схемы и нарушение бизнес-правила — разные классы ошибок.",
+        "question_audio": "audio/py-middle-074_question.mp3"
+      }
+    ],
+    "py-middle-015": [
+      {
+        "id": "py-middle-015~py-middle-039",
+        "card_id": "py-middle-039",
+        "question": "Что такое абстрактный класс и Protocol?",
+        "answer": "abc.ABC с @abstractmethod обеспечивает runtime-контракт наследования на уровне создания экземпляров. typing.Protocol задаёт структурный контракт в первую очередь для статической типизации. Выбор зависит от необходимости общего поведения и явной иерархии.",
+        "question_audio": "audio/py-middle-039_question.mp3"
+      },
+      {
+        "id": "py-middle-015~py-middle-041",
+        "card_id": "py-middle-041",
+        "question": "Что такое dependency injection?",
+        "answer": "Зависимости передаются снаружи — через конструктор, функцию или провайдер — вместо создания внутри бизнес-логики. Так проще тестировать код, заменять БД/HTTP-клиенты и конфигурацию. DI не требует тяжёлого контейнера.",
+        "question_audio": "audio/py-middle-041_question.mp3"
+      }
+    ],
+    "py-middle-016": [
+      {
+        "id": "py-middle-016~py-middle-017",
+        "card_id": "py-middle-017",
+        "question": "Что такое распаковка * и **?",
+        "answer": "* разворачивает итерируемый объект в позиционные аргументы или собирает позиционные остатки; ** разворачивает отображение в именованные аргументы. В сигнатуре *, после него параметры доступны только по имени, а / задаёт позиционные-only параметры.",
+        "question_audio": "audio/py-middle-017_question.mp3"
+      },
+      {
+        "id": "py-middle-016~py-middle-025",
+        "card_id": "py-middle-025",
+        "question": "Что произойдёт с генератором при повторном проходе?",
+        "answer": "В отличие от списка, генератор обычно не перезапускается. После исчерпания второй цикл ничего не выдаст. Если нужно несколько проходов, повторно вызывайте генераторную функцию или материализуйте данные (с учётом памяти).",
+        "question_audio": "audio/py-middle-025_question.mp3"
+      }
+    ],
+    "py-middle-017": [
+      {
+        "id": "py-middle-017~py-middle-018",
+        "card_id": "py-middle-018",
+        "question": "В чём разница между str, bytes и кодировкой?",
+        "answer": "str хранит Unicode-текст, bytes — последовательность байтов. encode переводит текст в байты, decode — обратно. На границах системы (файлы, сеть) явно задавайте UTF-8 и определяйте политику ошибок; нельзя считать, что количество символов равно количеству байтов.",
+        "question_audio": "audio/py-middle-018_question.mp3"
+      },
+      {
+        "id": "py-middle-017~py-middle-001",
+        "card_id": "py-middle-001",
+        "question": "Чем Python отличается от компилируемых языков?",
+        "answer": "В CPython исходный код обычно компилируется в байткод, который исполняет виртуальная машина. Поэтому выражение «Python — интерпретируемый» описывает типичный способ исполнения, а не отсутствие компиляции. Язык динамически типизирован, тип принадлежит объекту, а не имени переменной.",
+        "question_audio": "audio/py-middle-001_question.mp3"
+      }
+    ],
+    "py-middle-018": [
+      {
+        "id": "py-middle-018~py-middle-078",
+        "card_id": "py-middle-078",
+        "question": "Как реализовать загрузку большого файла без переполнения RAM?",
+        "answer": "Обрабатывайте файл чанками или потоково, ограничивайте размер, валидируйте MIME/содержимое, храните вне процесса (object storage) и возвращайте идентификатор задачи для долгой обработки. Для CSV/JSONL полезны генераторы и батчи, а не полный read() в память.",
+        "question_audio": "audio/py-middle-078_question.mp3"
+      },
+      {
+        "id": "py-middle-018~py-middle-086",
+        "card_id": "py-middle-086",
+        "question": "Что такое CSRF, XSS и SQL injection?",
+        "answer": "CSRF заставляет браузер отправить нежелательный запрос с авторизационными cookie; помогают CSRF-токены и SameSite. XSS — внедрение исполняемого кода в страницу, лечится корректным escaping и CSP. SQLi предотвращают параметризованные запросы, а не ручное экранирование строк.",
+        "question_audio": "audio/py-middle-086_question.mp3"
+      }
+    ],
+    "py-middle-019": [
+      {
+        "id": "py-middle-019~py-middle-027",
+        "card_id": "py-middle-027",
+        "question": "Чем shallow copy отличается от deepcopy?",
+        "answer": "Поверхностное копирование создаёт новый внешний контейнер, но вложенные объекты остаются общими. deepcopy рекурсивно копирует вложенные объекты там, где это возможно, и может быть дорогим или нежелательным для соединений и ресурсов.",
+        "question_audio": "audio/py-middle-027_question.mp3"
+      },
+      {
+        "id": "py-middle-019~py-middle-028",
+        "card_id": "py-middle-028",
+        "question": "Почему list * n может дать неожиданный результат?",
+        "answer": "Умножение списка повторяет ссылки на элементы, а не копирует вложенные списки. Для независимых строк двумерного массива используйте генератор/включение.",
+        "question_audio": "audio/py-middle-028_question.mp3"
+      }
+    ],
+    "py-middle-020": [
+      {
+        "id": "py-middle-020~py-middle-028",
+        "card_id": "py-middle-028",
+        "question": "Почему list * n может дать неожиданный результат?",
+        "answer": "Умножение списка повторяет ссылки на элементы, а не копирует вложенные списки. Для независимых строк двумерного массива используйте генератор/включение.",
+        "question_audio": "audio/py-middle-028_question.mp3"
+      },
+      {
+        "id": "py-middle-020~py-middle-029",
+        "card_id": "py-middle-029",
+        "question": "Что делают any и all? Есть ли short-circuit?",
+        "answer": "any возвращает True при первом истинном элементе, all — False при первом ложном; оба работают лениво с итератором. На пустом наборе any([]) == False, all([]) == True.",
+        "question_audio": "audio/py-middle-029_question.mp3"
+      }
+    ],
+    "py-middle-021": [
+      {
+        "id": "py-middle-021~py-middle-029",
+        "card_id": "py-middle-029",
+        "question": "Что делают any и all? Есть ли short-circuit?",
+        "answer": "any возвращает True при первом истинном элементе, all — False при первом ложном; оба работают лениво с итератором. На пустом наборе any([]) == False, all([]) == True.",
+        "question_audio": "audio/py-middle-029_question.mp3"
+      },
+      {
+        "id": "py-middle-021~py-middle-030",
+        "card_id": "py-middle-030",
+        "question": "Как выбрать структуру для частот и группировки?",
+        "answer": "Для подсчёта частот — collections.Counter; для группировки списков по ключу — defaultdict(list). Это компактнее и обычно понятнее, чем постоянные ручные проверки наличия ключа.",
+        "question_audio": "audio/py-middle-030_question.mp3"
+      }
+    ],
+    "py-middle-022": [
+      {
+        "id": "py-middle-022~py-middle-030",
+        "card_id": "py-middle-030",
+        "question": "Как выбрать структуру для частот и группировки?",
+        "answer": "Для подсчёта частот — collections.Counter; для группировки списков по ключу — defaultdict(list). Это компактнее и обычно понятнее, чем постоянные ручные проверки наличия ключа.",
+        "question_audio": "audio/py-middle-030_question.mp3"
+      },
+      {
+        "id": "py-middle-022~py-middle-019",
+        "card_id": "py-middle-019",
+        "question": "list против tuple: когда что выбирать?",
+        "answer": "list подходит для изменяемой последовательности, tuple — для фиксированной записи или неизменяемой структуры. Кортеж не делает неизменяемыми вложенные объекты. В обоих случаях доступ по индексу O(1), а вставка в начало обычно O(n).",
+        "question_audio": "audio/py-middle-019_question.mp3"
+      }
+    ],
+    "py-middle-023": [
+      {
+        "id": "py-middle-023~py-middle-019",
+        "card_id": "py-middle-019",
+        "question": "list против tuple: когда что выбирать?",
+        "answer": "list подходит для изменяемой последовательности, tuple — для фиксированной записи или неизменяемой структуры. Кортеж не делает неизменяемыми вложенные объекты. В обоих случаях доступ по индексу O(1), а вставка в начало обычно O(n).",
+        "question_audio": "audio/py-middle-019_question.mp3"
+      },
+      {
+        "id": "py-middle-023~py-middle-020",
+        "card_id": "py-middle-020",
+        "question": "Чем set отличается от list?",
+        "answer": "set хранит уникальные хешируемые элементы. Проверка принадлежности в среднем O(1), а у list O(n). Порядок элементов set не считается API-гарантией; для упорядоченного уникального набора можно использовать dict.fromkeys(...).",
+        "question_audio": "audio/py-middle-020_question.mp3"
+      }
+    ],
+    "py-middle-024": [
+      {
+        "id": "py-middle-024~py-middle-025",
+        "card_id": "py-middle-025",
+        "question": "Что произойдёт с генератором при повторном проходе?",
+        "answer": "В отличие от списка, генератор обычно не перезапускается. После исчерпания второй цикл ничего не выдаст. Если нужно несколько проходов, повторно вызывайте генераторную функцию или материализуйте данные (с учётом памяти).",
+        "question_audio": "audio/py-middle-025_question.mp3"
+      },
+      {
+        "id": "py-middle-024~py-middle-026",
+        "card_id": "py-middle-026",
+        "question": "Списковое включение против генераторного выражения?",
+        "answer": "[f(x) for x in items] сразу создаёт список, а (f(x) for x in items) создаёт ленивый итератор. Если итоговый список всё равно нужен, включение часто проще; если нужен один проход и экономия памяти — генератор.",
+        "question_audio": "audio/py-middle-026_question.mp3"
+      }
+    ],
+    "py-middle-025": [
+      {
+        "id": "py-middle-025~py-middle-021",
+        "card_id": "py-middle-021",
+        "question": "Какова сложность основных операций dict?",
+        "answer": "Получение, вставка и удаление по ключу имеют ожидаемую сложность O(1), но теоретически в худшем случае возможна O(n) при неблагоприятных коллизиях и иных условиях. Операции зависят от корректного __hash__ и __eq__.",
+        "question_audio": "audio/py-middle-021_question.mp3"
+      },
+      {
+        "id": "py-middle-025~py-middle-022",
+        "card_id": "py-middle-022",
+        "question": "Что выбрать для очереди: list или deque?",
+        "answer": "Для добавления и удаления с обоих концов лучше collections.deque: append и popleft обычно O(1). list.pop(0) сдвигает элементы и работает за O(n). Если нужна потокобезопасная очередь между потоками, используйте queue.Queue.",
+        "question_audio": "audio/py-middle-022_question.mp3"
+      }
+    ],
+    "py-middle-026": [
+      {
+        "id": "py-middle-026~py-middle-022",
+        "card_id": "py-middle-022",
+        "question": "Что выбрать для очереди: list или deque?",
+        "answer": "Для добавления и удаления с обоих концов лучше collections.deque: append и popleft обычно O(1). list.pop(0) сдвигает элементы и работает за O(n). Если нужна потокобезопасная очередь между потоками, используйте queue.Queue.",
+        "question_audio": "audio/py-middle-022_question.mp3"
+      },
+      {
+        "id": "py-middle-026~py-middle-023",
+        "card_id": "py-middle-023",
+        "question": "Чем iterable отличается от iterator?",
+        "answer": "Iterable поддерживает получение итератора через iter(obj); iterator хранит состояние обхода и имеет __next__, возвращая элементы до StopIteration. Один iterable может создавать независимые итераторы, а сам iterator обычно одноразовый.",
+        "question_audio": "audio/py-middle-023_question.mp3"
+      }
+    ],
+    "py-middle-027": [
+      {
+        "id": "py-middle-027~py-middle-028",
+        "card_id": "py-middle-028",
+        "question": "Почему list * n может дать неожиданный результат?",
+        "answer": "Умножение списка повторяет ссылки на элементы, а не копирует вложенные списки. Для независимых строк двумерного массива используйте генератор/включение.",
+        "question_audio": "audio/py-middle-028_question.mp3"
+      },
+      {
+        "id": "py-middle-027~py-middle-002",
+        "card_id": "py-middle-002",
+        "question": "В чём разница между == и is?",
+        "answer": "== сравнивает значения через __eq__, is проверяет идентичность объектов. Для None используют is None. Совпадение идентичности небольших чисел или строк из-за интернирования — деталь реализации; опираться на неё нельзя.",
+        "question_audio": "audio/py-middle-002_question.mp3"
+      }
+    ],
+    "py-middle-028": [
+      {
+        "id": "py-middle-028~py-middle-002",
+        "card_id": "py-middle-002",
+        "question": "В чём разница между == и is?",
+        "answer": "== сравнивает значения через __eq__, is проверяет идентичность объектов. Для None используют is None. Совпадение идентичности небольших чисел или строк из-за интернирования — деталь реализации; опираться на неё нельзя.",
+        "question_audio": "audio/py-middle-002_question.mp3"
+      },
+      {
+        "id": "py-middle-028~py-middle-003",
+        "card_id": "py-middle-003",
+        "question": "Что значит mutable и immutable? Какие типы относятся к ним?",
+        "answer": "Изменяемые объекты можно менять без замены самого объекта: list, dict, set. Неизменяемые: int, float, str, bytes, tuple, frozenset. При этом tuple может содержать изменяемый список: неизменяем сам кортеж, но не обязательно его содержимое.",
+        "question_audio": "audio/py-middle-003_question.mp3"
+      }
+    ],
+    "py-middle-029": [
+      {
+        "id": "py-middle-029~py-middle-025",
+        "card_id": "py-middle-025",
+        "question": "Что произойдёт с генератором при повторном проходе?",
+        "answer": "В отличие от списка, генератор обычно не перезапускается. После исчерпания второй цикл ничего не выдаст. Если нужно несколько проходов, повторно вызывайте генераторную функцию или материализуйте данные (с учётом памяти).",
+        "question_audio": "audio/py-middle-025_question.mp3"
+      },
+      {
+        "id": "py-middle-029~py-middle-026",
+        "card_id": "py-middle-026",
+        "question": "Списковое включение против генераторного выражения?",
+        "answer": "[f(x) for x in items] сразу создаёт список, а (f(x) for x in items) создаёт ленивый итератор. Если итоговый список всё равно нужен, включение часто проще; если нужен один проход и экономия памяти — генератор.",
+        "question_audio": "audio/py-middle-026_question.mp3"
+      }
+    ],
+    "py-middle-030": [
+      {
+        "id": "py-middle-030~py-middle-026",
+        "card_id": "py-middle-026",
+        "question": "Списковое включение против генераторного выражения?",
+        "answer": "[f(x) for x in items] сразу создаёт список, а (f(x) for x in items) создаёт ленивый итератор. Если итоговый список всё равно нужен, включение часто проще; если нужен один проход и экономия памяти — генератор.",
+        "question_audio": "audio/py-middle-026_question.mp3"
+      },
+      {
+        "id": "py-middle-030~py-middle-027",
+        "card_id": "py-middle-027",
+        "question": "Чем shallow copy отличается от deepcopy?",
+        "answer": "Поверхностное копирование создаёт новый внешний контейнер, но вложенные объекты остаются общими. deepcopy рекурсивно копирует вложенные объекты там, где это возможно, и может быть дорогим или нежелательным для соединений и ресурсов.",
+        "question_audio": "audio/py-middle-027_question.mp3"
+      }
+    ],
+    "py-middle-031": [
+      {
+        "id": "py-middle-031~py-middle-008",
+        "card_id": "py-middle-008",
+        "question": "Что такое LEGB и зачем global/nonlocal?",
+        "answer": "Разрешение имён идёт Local → Enclosing → Global → Builtins. nonlocal позволяет переназначать имя из охватывающей функции, global — имя уровня модуля. По умолчанию присваивание внутри функции делает имя локальным.",
+        "question_audio": "audio/py-middle-008_question.mp3"
+      },
+      {
+        "id": "py-middle-031~py-middle-109",
+        "card_id": "py-middle-109",
+        "question": "Показать ловушку с замыканиями в цикле и исправить",
+        "answer": "В lambda без фиксации переменной каждая функция обращается к текущему i на момент вызова. Аргумент по умолчанию x=i фиксирует значение на каждой итерации.",
+        "question_audio": "audio/py-middle-109_question.mp3"
+      }
+    ],
+    "py-middle-032": [
+      {
+        "id": "py-middle-032~py-middle-041",
+        "card_id": "py-middle-041",
+        "question": "Что такое dependency injection?",
+        "answer": "Зависимости передаются снаружи — через конструктор, функцию или провайдер — вместо создания внутри бизнес-логики. Так проще тестировать код, заменять БД/HTTP-клиенты и конфигурацию. DI не требует тяжёлого контейнера.",
+        "question_audio": "audio/py-middle-041_question.mp3"
+      },
+      {
+        "id": "py-middle-032~py-middle-092",
+        "card_id": "py-middle-092",
+        "question": "Как правильно использовать mock?",
+        "answer": "Мокайте границы, которые не относятся к тестируемому поведению: HTTP-клиент, внешнюю очередь, время. Подменяйте объект там, где он используется (lookup location), а не обязательно там, где он определён. Проверяйте не только вызов, но и видимый результат/контракт.",
+        "question_audio": "audio/py-middle-092_question.mp3"
+      }
+    ],
+    "py-middle-033": [
+      {
+        "id": "py-middle-033~py-middle-038",
+        "card_id": "py-middle-038",
+        "question": "Что такое MRO и super()?",
+        "answer": "Method Resolution Order определяет порядок поиска методов при множественном наследовании (в Python используется C3 linearization). super() вызывает следующий метод в цепочке MRO, не обязательно прямого родителя. Это важно для кооперативного наследования.",
+        "question_audio": "audio/py-middle-038_question.mp3"
+      },
+      {
+        "id": "py-middle-033~py-middle-039",
+        "card_id": "py-middle-039",
+        "question": "Что такое абстрактный класс и Protocol?",
+        "answer": "abc.ABC с @abstractmethod обеспечивает runtime-контракт наследования на уровне создания экземпляров. typing.Protocol задаёт структурный контракт в первую очередь для статической типизации. Выбор зависит от необходимости общего поведения и явной иерархии.",
+        "question_audio": "audio/py-middle-039_question.mp3"
+      }
+    ],
+    "py-middle-034": [
+      {
+        "id": "py-middle-034~py-middle-037",
+        "card_id": "py-middle-037",
+        "question": "Для чего нужны __str__, __repr__ и __eq__?",
+        "answer": "__str__ задаёт удобный текст для пользователя, __repr__ — диагностическое представление, __eq__ — семантику сравнения значений. Изменение __eq__ может повлиять на хешируемость класса: контракты __eq__ и __hash__ должны быть согласованы.",
+        "question_audio": "audio/py-middle-037_question.mp3"
+      },
+      {
+        "id": "py-middle-034~py-middle-043",
+        "card_id": "py-middle-043",
+        "question": "Зачем нужны __slots__?",
+        "answer": "__slots__ может уменьшить накладные расходы на экземпляры и ограничить набор атрибутов, особенно если объектов очень много. Но есть нюансы наследования, weakref и сериализации; использовать стоит после измерений, а не автоматически.",
+        "question_audio": "audio/py-middle-043_question.mp3"
+      }
+    ],
+    "py-middle-035": [
+      {
+        "id": "py-middle-035~py-middle-040",
+        "card_id": "py-middle-040",
+        "question": "Что такое композиция и почему её часто предпочитают наследованию?",
+        "answer": "Композиция собирает объект из зависимостей вместо построения глубокой иерархии is-a. Она уменьшает связанность и облегчает подмену компонентов в тестах. Наследование хорошо, когда есть устойчивое отношение подтипа и контракт базового класса.",
+        "question_audio": "audio/py-middle-040_question.mp3"
+      },
+      {
+        "id": "py-middle-035~py-middle-041",
+        "card_id": "py-middle-041",
+        "question": "Что такое dependency injection?",
+        "answer": "Зависимости передаются снаружи — через конструктор, функцию или провайдер — вместо создания внутри бизнес-логики. Так проще тестировать код, заменять БД/HTTP-клиенты и конфигурацию. DI не требует тяжёлого контейнера.",
+        "question_audio": "audio/py-middle-041_question.mp3"
+      }
+    ],
+    "py-middle-036": [
+      {
+        "id": "py-middle-036~py-middle-003",
+        "card_id": "py-middle-003",
+        "question": "Что значит mutable и immutable? Какие типы относятся к ним?",
+        "answer": "Изменяемые объекты можно менять без замены самого объекта: list, dict, set. Неизменяемые: int, float, str, bytes, tuple, frozenset. При этом tuple может содержать изменяемый список: неизменяем сам кортеж, но не обязательно его содержимое.",
+        "question_audio": "audio/py-middle-003_question.mp3"
+      },
+      {
+        "id": "py-middle-036~py-middle-012",
+        "card_id": "py-middle-012",
+        "question": "Что такое hashable и почему список не ключ словаря?",
+        "answer": "Ключ dict и элемент set должны иметь согласованный и стабильный в процессе хранения хеш. list изменяем и не хешируем. Неизменяемость сама по себе не достаточна: tuple со списком внутри тоже не хешируется; пользовательский объект может иметь свой __hash__.",
+        "question_audio": "audio/py-middle-012_question.mp3"
+      }
+    ],
+    "py-middle-037": [
+      {
+        "id": "py-middle-037~py-middle-012",
+        "card_id": "py-middle-012",
+        "question": "Что такое hashable и почему список не ключ словаря?",
+        "answer": "Ключ dict и элемент set должны иметь согласованный и стабильный в процессе хранения хеш. list изменяем и не хешируем. Неизменяемость сама по себе не достаточна: tuple со списком внутри тоже не хешируется; пользовательский объект может иметь свой __hash__.",
+        "question_audio": "audio/py-middle-012_question.mp3"
+      },
+      {
+        "id": "py-middle-037~py-middle-038",
+        "card_id": "py-middle-038",
+        "question": "Что такое MRO и super()?",
+        "answer": "Method Resolution Order определяет порядок поиска методов при множественном наследовании (в Python используется C3 linearization). super() вызывает следующий метод в цепочке MRO, не обязательно прямого родителя. Это важно для кооперативного наследования.",
+        "question_audio": "audio/py-middle-038_question.mp3"
+      }
+    ],
+    "py-middle-038": [
+      {
+        "id": "py-middle-038~py-middle-043",
+        "card_id": "py-middle-043",
+        "question": "Зачем нужны __slots__?",
+        "answer": "__slots__ может уменьшить накладные расходы на экземпляры и ограничить набор атрибутов, особенно если объектов очень много. Но есть нюансы наследования, weakref и сериализации; использовать стоит после измерений, а не автоматически.",
+        "question_audio": "audio/py-middle-043_question.mp3"
+      },
+      {
+        "id": "py-middle-038~py-middle-044",
+        "card_id": "py-middle-044",
+        "question": "Что такое SOLID на практике для Python-бэкенда?",
+        "answer": "SRP: отдельные задачи у API-обработчика, сервиса и репозитория. OCP/LSP/ISP: расширяемые интерфейсы без нарушения контрактов. DIP: высокоуровневые компоненты зависят от абстракций. Это ориентиры для дизайна, а не повод создавать десятки классов на простую функцию.",
+        "question_audio": "audio/py-middle-044_question.mp3"
+      }
+    ],
+    "py-middle-039": [
+      {
+        "id": "py-middle-039~py-middle-015",
+        "card_id": "py-middle-015",
+        "question": "Что такое duck typing и Protocol?",
+        "answer": "Duck typing фокусируется на доступных операциях, а не на наследовании. typing.Protocol позволяет статически описать структурный интерфейс: объект подходит, если реализует требуемые методы и атрибуты, даже без явного наследования.",
+        "question_audio": "audio/py-middle-015_question.mp3"
+      },
+      {
+        "id": "py-middle-039~py-middle-040",
+        "card_id": "py-middle-040",
+        "question": "Что такое композиция и почему её часто предпочитают наследованию?",
+        "answer": "Композиция собирает объект из зависимостей вместо построения глубокой иерархии is-a. Она уменьшает связанность и облегчает подмену компонентов в тестах. Наследование хорошо, когда есть устойчивое отношение подтипа и контракт базового класса.",
+        "question_audio": "audio/py-middle-040_question.mp3"
+      }
+    ],
+    "py-middle-040": [
+      {
+        "id": "py-middle-040~py-middle-031",
+        "card_id": "py-middle-031",
+        "question": "Что такое closure и late binding?",
+        "answer": "Замыкание сохраняет связь с переменными внешней области видимости. В цикле вложенные функции часто обращаются к одной и той же переменной, значение которой меняется. Чтобы зафиксировать текущее значение, используйте аргумент по умолчанию или фабрику.",
+        "question_audio": "audio/py-middle-031_question.mp3"
+      },
+      {
+        "id": "py-middle-040~py-middle-032",
+        "card_id": "py-middle-032",
+        "question": "Что такое декоратор?",
+        "answer": "Декоратор принимает функцию или класс и возвращает обёрнутый/изменённый объект. Его применяют для логирования, кэша, авторизации и измерений. functools.wraps помогает сохранить __name__, __doc__ и __wrapped__.",
+        "question_audio": "audio/py-middle-032_question.mp3"
+      }
+    ],
+    "py-middle-041": [
+      {
+        "id": "py-middle-041~py-middle-075",
+        "card_id": "py-middle-075",
+        "question": "Как использовать Depends в FastAPI?",
+        "answer": "Depends объявляет зависимость, которую FastAPI разрешает для запроса: сессия БД, пользователь, сервис, настройки. Генераторные зависимости с yield могут освобождать ресурсы. Для тестов зависимости удобно подменять через dependency_overrides.",
+        "question_audio": "audio/py-middle-075_question.mp3"
+      },
+      {
+        "id": "py-middle-041~py-middle-092",
+        "card_id": "py-middle-092",
+        "question": "Как правильно использовать mock?",
+        "answer": "Мокайте границы, которые не относятся к тестируемому поведению: HTTP-клиент, внешнюю очередь, время. Подменяйте объект там, где он используется (lookup location), а не обязательно там, где он определён. Проверяйте не только вызов, но и видимый результат/контракт.",
+        "question_audio": "audio/py-middle-092_question.mp3"
+      }
+    ],
+    "py-middle-042": [
+      {
+        "id": "py-middle-042~py-middle-010",
+        "card_id": "py-middle-010",
+        "question": "Как работают исключения и finally?",
+        "answer": "try/except перехватывает подходящие исключения; else исполняется, если блок try завершился без исключения; finally выполняется при выходе почти всегда, включая return. Не стоит возвращать значение из finally: оно может скрыть исключение или исходный return.",
+        "question_audio": "audio/py-middle-010_question.mp3"
+      },
+      {
+        "id": "py-middle-042~py-middle-053",
+        "card_id": "py-middle-053",
+        "question": "Что происходит при отмене asyncio.Task?",
+        "answer": "Task.cancel() запрашивает отмену; во время следующего await в задаче обычно возникает asyncio.CancelledError. Ресурсы очищают через finally/async with, а отмену обычно пробрасывают дальше. Для корректной остановки важна политика отмены и shutdown.",
+        "question_audio": "audio/py-middle-053_question.mp3"
+      }
+    ],
+    "py-middle-043": [
+      {
+        "id": "py-middle-043~py-middle-034",
+        "card_id": "py-middle-034",
+        "question": "Как работает @property?",
+        "answer": "property управляет доступом к атрибуту через методы getter/setter/deleter с привычным синтаксисом obj.field. Полезен для валидации и вычисляемых значений, но не стоит маскировать дорогостоящий сетевой запрос под простое чтение поля.",
+        "question_audio": "audio/py-middle-034_question.mp3"
+      },
+      {
+        "id": "py-middle-043~py-middle-035",
+        "card_id": "py-middle-035",
+        "question": "Что такое @staticmethod и @classmethod?",
+        "answer": "Метод экземпляра получает self. classmethod получает cls и удобен для альтернативных конструкторов и поведения, зависящего от класса. staticmethod не получает ни self, ни cls: это функция, логически связанная с классом.",
+        "question_audio": "audio/py-middle-035_question.mp3"
+      }
+    ],
+    "py-middle-044": [
+      {
+        "id": "py-middle-044~py-middle-035",
+        "card_id": "py-middle-035",
+        "question": "Что такое @staticmethod и @classmethod?",
+        "answer": "Метод экземпляра получает self. classmethod получает cls и удобен для альтернативных конструкторов и поведения, зависящего от класса. staticmethod не получает ни self, ни cls: это функция, логически связанная с классом.",
+        "question_audio": "audio/py-middle-035_question.mp3"
+      },
+      {
+        "id": "py-middle-044~py-middle-036",
+        "card_id": "py-middle-036",
+        "question": "Когда использовать dataclass?",
+        "answer": "@dataclass генерирует __init__, __repr__, __eq__ и другие методы для объектов данных. field(default_factory=list) нужен для изменяемых полей. frozen=True запрещает обычное переназначение атрибутов, но не делает глубоко неизменяемыми вложенные объекты.",
+        "question_audio": "audio/py-middle-036_question.mp3"
+      }
+    ],
+    "py-middle-045": [
+      {
+        "id": "py-middle-045~py-middle-046",
+        "card_id": "py-middle-046",
+        "question": "Когда выбирать threading, multiprocessing или asyncio?",
+        "answer": "threading полезен для блокирующего I/O и синхронных библиотек; multiprocessing — для тяжёлых вычислений; asyncio — для большого числа I/O-операций с async-библиотеками. На выбор влияют стоимость сериализации, блокировки, доступные клиенты и модель развёртывания.",
+        "question_audio": "audio/py-middle-046_question.mp3"
+      },
+      {
+        "id": "py-middle-045~py-middle-047",
+        "card_id": "py-middle-047",
+        "question": "Что делает await и что такое event loop?",
+        "answer": "await приостанавливает корутину, пока awaitable не завершится, позволяя циклу событий выполнять другие готовые задачи. await не создаёт новый поток и сам по себе не ускоряет CPU-bound код. Тело async def запускается как корутина через await или task.",
+        "question_audio": "audio/py-middle-047_question.mp3"
+      }
+    ],
+    "py-middle-046": [
+      {
+        "id": "py-middle-046~py-middle-047",
+        "card_id": "py-middle-047",
+        "question": "Что делает await и что такое event loop?",
+        "answer": "await приостанавливает корутину, пока awaitable не завершится, позволяя циклу событий выполнять другие готовые задачи. await не создаёт новый поток и сам по себе не ускоряет CPU-bound код. Тело async def запускается как корутина через await или task.",
+        "question_audio": "audio/py-middle-047_question.mp3"
+      },
+      {
+        "id": "py-middle-046~py-middle-048",
+        "card_id": "py-middle-048",
+        "question": "Чем await coroutine отличается от create_task?",
+        "answer": "await coroutine непосредственно ожидает корутину в текущем потоке исполнения задач; asyncio.create_task планирует её выполнение как отдельной Task, что позволяет организовать конкурентное выполнение. Для связанной группы задач и корректной обработки ошибок полезен TaskGroup.",
+        "question_audio": "audio/py-middle-048_question.mp3"
+      }
+    ],
+    "py-middle-047": [
+      {
+        "id": "py-middle-047~py-middle-048",
+        "card_id": "py-middle-048",
+        "question": "Чем await coroutine отличается от create_task?",
+        "answer": "await coroutine непосредственно ожидает корутину в текущем потоке исполнения задач; asyncio.create_task планирует её выполнение как отдельной Task, что позволяет организовать конкурентное выполнение. Для связанной группы задач и корректной обработки ошибок полезен TaskGroup.",
+        "question_audio": "audio/py-middle-048_question.mp3"
+      },
+      {
+        "id": "py-middle-047~py-middle-049",
+        "card_id": "py-middle-049",
+        "question": "Почему time.sleep() внутри async def — ошибка?",
+        "answer": "time.sleep блокирует поток с event loop, из-за чего другие корутины не продвигаются. Используйте await asyncio.sleep(...). Аналогично блокирующие HTTP/SQL-клиенты в async-эндпоинте мешают конкурентности; нужны async-клиенты либо перенос в пул потоков.",
+        "question_audio": "audio/py-middle-049_question.mp3"
+      }
+    ],
+    "py-middle-048": [
+      {
+        "id": "py-middle-048~py-middle-049",
+        "card_id": "py-middle-049",
+        "question": "Почему time.sleep() внутри async def — ошибка?",
+        "answer": "time.sleep блокирует поток с event loop, из-за чего другие корутины не продвигаются. Используйте await asyncio.sleep(...). Аналогично блокирующие HTTP/SQL-клиенты в async-эндпоинте мешают конкурентности; нужны async-клиенты либо перенос в пул потоков.",
+        "question_audio": "audio/py-middle-049_question.mp3"
+      },
+      {
+        "id": "py-middle-048~py-middle-052",
+        "card_id": "py-middle-052",
+        "question": "Как ограничить количество параллельных async-запросов?",
+        "answer": "Используйте asyncio.Semaphore или ограничение пула соединений. Это предотвращает перегрузку внешнего API и базы. Отдельно настройте тайм-ауты, retry с jitter и лимиты на стороне сервиса.",
+        "question_audio": "audio/py-middle-052_question.mp3"
+      }
+    ],
+    "py-middle-049": [
+      {
+        "id": "py-middle-049~py-middle-052",
+        "card_id": "py-middle-052",
+        "question": "Как ограничить количество параллельных async-запросов?",
+        "answer": "Используйте asyncio.Semaphore или ограничение пула соединений. Это предотвращает перегрузку внешнего API и базы. Отдельно настройте тайм-ауты, retry с jitter и лимиты на стороне сервиса.",
+        "question_audio": "audio/py-middle-052_question.mp3"
+      },
+      {
+        "id": "py-middle-049~py-middle-053",
+        "card_id": "py-middle-053",
+        "question": "Что происходит при отмене asyncio.Task?",
+        "answer": "Task.cancel() запрашивает отмену; во время следующего await в задаче обычно возникает asyncio.CancelledError. Ресурсы очищают через finally/async with, а отмену обычно пробрасывают дальше. Для корректной остановки важна политика отмены и shutdown.",
+        "question_audio": "audio/py-middle-053_question.mp3"
+      }
+    ],
+    "py-middle-050": [
+      {
+        "id": "py-middle-050~py-middle-063",
+        "card_id": "py-middle-063",
+        "question": "Как избежать lost update при конкурентном обновлении?",
+        "answer": "Для конкурентной записи используют атомарный UPDATE с выражением, SELECT ... FOR UPDATE внутри транзакции или optimistic locking по версии записи. Простая последовательность read → изменить объект → save без блокировок может потерять чужое изменение.",
+        "question_audio": "audio/py-middle-063_question.mp3"
+      },
+      {
+        "id": "py-middle-050~py-middle-115",
+        "card_id": "py-middle-115",
+        "question": "Как безопасно уменьшить остаток товара при параллельных заказах?",
+        "answer": "Условный атомарный UPDATE не допускает ухода остатка в минус. Успех определяется количеством обновлённых строк; остальные действия заказа должны быть в одной корректно спроектированной транзакции.",
+        "question_audio": "audio/py-middle-115_question.mp3"
+      }
+    ],
+    "py-middle-051": [
+      {
+        "id": "py-middle-051~py-middle-057",
+        "card_id": "py-middle-057",
+        "question": "Что такое уровни изоляции транзакций?",
+        "answer": "Read Committed, Repeatable Read и Serializable задают различия по видимости параллельных изменений; стандартизованный Read Uncommitted также существует, но в PostgreSQL ведёт себя как Read Committed. Реальные аномалии зависят от СУБД и MVCC; Serializable может потребовать retry транзакции.",
+        "question_audio": "audio/py-middle-057_question.mp3"
+      },
+      {
+        "id": "py-middle-051~py-middle-063",
+        "card_id": "py-middle-063",
+        "question": "Как избежать lost update при конкурентном обновлении?",
+        "answer": "Для конкурентной записи используют атомарный UPDATE с выражением, SELECT ... FOR UPDATE внутри транзакции или optimistic locking по версии записи. Простая последовательность read → изменить объект → save без блокировок может потерять чужое изменение.",
+        "question_audio": "audio/py-middle-063_question.mp3"
+      }
+    ],
+    "py-middle-052": [
+      {
+        "id": "py-middle-052~py-middle-053",
+        "card_id": "py-middle-053",
+        "question": "Что происходит при отмене asyncio.Task?",
+        "answer": "Task.cancel() запрашивает отмену; во время следующего await в задаче обычно возникает asyncio.CancelledError. Ресурсы очищают через finally/async with, а отмену обычно пробрасывают дальше. Для корректной остановки важна политика отмены и shutdown.",
+        "question_audio": "audio/py-middle-053_question.mp3"
+      },
+      {
+        "id": "py-middle-052~py-middle-045",
+        "card_id": "py-middle-045",
+        "question": "В чём разница между concurrency и parallelism?",
+        "answer": "Concurrency — организация одновременного прогресса нескольких задач, parallelism — фактическое выполнение одновременно на нескольких вычислительных ресурсах. asyncio обеспечивает кооперативную конкурентность; процессы позволяют использовать несколько ядер для CPU-bound нагрузки.",
+        "question_audio": "audio/py-middle-045_question.mp3"
+      }
+    ],
+    "py-middle-053": [
+      {
+        "id": "py-middle-053~py-middle-042",
+        "card_id": "py-middle-042",
+        "question": "Как сделать контекстный менеджер?",
+        "answer": "Объект реализует __enter__ и __exit__, либо применяется contextlib.contextmanager. Контекстный менеджер обеспечивает предсказуемую очистку ресурса даже при исключении: файл, транзакция, блокировка, соединение.",
+        "question_audio": "audio/py-middle-042_question.mp3"
+      },
+      {
+        "id": "py-middle-053~py-middle-103",
+        "card_id": "py-middle-103",
+        "question": "Как организовать graceful shutdown веб-приложения?",
+        "answer": "Перестать принимать новые запросы, дождаться активных в пределах timeout, завершить background tasks, закрыть подключения и отправить сигналы готовности. При работе с очередями важно корректно подтверждать сообщения: не потерять задание при выключении worker.",
+        "question_audio": "audio/py-middle-103_question.mp3"
+      }
+    ],
+    "py-middle-054": [
+      {
+        "id": "py-middle-054~py-middle-055",
+        "card_id": "py-middle-055",
+        "question": "Как не потерять задачу после записи в БД?",
+        "answer": "Если поставить задачу в очередь до commit, worker может прочитать ещё незафиксированные данные. В Django используйте transaction.on_commit(...) для публикации после commit. Для более сильных гарантий между БД и брокером применяют transactional outbox.",
+        "question_audio": "audio/py-middle-055_question.mp3"
+      },
+      {
+        "id": "py-middle-054~py-middle-067",
+        "card_id": "py-middle-067",
+        "question": "Что такое идемпотентность операций?",
+        "answer": "Повторное выполнение не меняет итоговый результат сверх первого успешного применения. Для оплаты или создания заказов используют idempotency key и уникальное ограничение в БД, а не только проверку на уровне Python. Retry без идемпотентности может создавать дубликаты.",
+        "question_audio": "audio/py-middle-067_question.mp3"
+      }
+    ],
+    "py-middle-055": [
+      {
+        "id": "py-middle-055~py-middle-056",
+        "card_id": "py-middle-056",
+        "question": "Что такое ACID?",
+        "answer": "Atomicity — транзакция целиком или откатывается; Consistency — соблюдение заданных ограничений; Isolation — степень изоляции параллельных операций; Durability — подтверждённые изменения переживают отказ согласно гарантиям СУБД. ACID не отменяет необходимости корректной бизнес-логики.",
+        "question_audio": "audio/py-middle-056_question.mp3"
+      },
+      {
+        "id": "py-middle-055~py-middle-057",
+        "card_id": "py-middle-057",
+        "question": "Что такое уровни изоляции транзакций?",
+        "answer": "Read Committed, Repeatable Read и Serializable задают различия по видимости параллельных изменений; стандартизованный Read Uncommitted также существует, но в PostgreSQL ведёт себя как Read Committed. Реальные аномалии зависят от СУБД и MVCC; Serializable может потребовать retry транзакции.",
+        "question_audio": "audio/py-middle-057_question.mp3"
+      }
+    ],
+    "py-middle-056": [
+      {
+        "id": "py-middle-056~py-middle-057",
+        "card_id": "py-middle-057",
+        "question": "Что такое уровни изоляции транзакций?",
+        "answer": "Read Committed, Repeatable Read и Serializable задают различия по видимости параллельных изменений; стандартизованный Read Uncommitted также существует, но в PostgreSQL ведёт себя как Read Committed. Реальные аномалии зависят от СУБД и MVCC; Serializable может потребовать retry транзакции.",
+        "question_audio": "audio/py-middle-057_question.mp3"
+      },
+      {
+        "id": "py-middle-056~py-middle-063",
+        "card_id": "py-middle-063",
+        "question": "Как избежать lost update при конкурентном обновлении?",
+        "answer": "Для конкурентной записи используют атомарный UPDATE с выражением, SELECT ... FOR UPDATE внутри транзакции или optimistic locking по версии записи. Простая последовательность read → изменить объект → save без блокировок может потерять чужое изменение.",
+        "question_audio": "audio/py-middle-063_question.mp3"
+      }
+    ],
+    "py-middle-057": [
+      {
+        "id": "py-middle-057~py-middle-063",
+        "card_id": "py-middle-063",
+        "question": "Как избежать lost update при конкурентном обновлении?",
+        "answer": "Для конкурентной записи используют атомарный UPDATE с выражением, SELECT ... FOR UPDATE внутри транзакции или optimistic locking по версии записи. Простая последовательность read → изменить объект → save без блокировок может потерять чужое изменение.",
+        "question_audio": "audio/py-middle-063_question.mp3"
+      },
+      {
+        "id": "py-middle-057~py-middle-115",
+        "card_id": "py-middle-115",
+        "question": "Как безопасно уменьшить остаток товара при параллельных заказах?",
+        "answer": "Условный атомарный UPDATE не допускает ухода остатка в минус. Успех определяется количеством обновлённых строк; остальные действия заказа должны быть в одной корректно спроектированной транзакции.",
+        "question_audio": "audio/py-middle-115_question.mp3"
+      }
+    ],
+    "py-middle-058": [
+      {
+        "id": "py-middle-058~py-middle-059",
+        "card_id": "py-middle-059",
+        "question": "Что такое индекс и почему он не всегда ускоряет запрос?",
+        "answer": "Индекс ускоряет отбор или сортировку по подходящим условиям, но требует места и замедляет записи/обновления. Планировщик может выбрать seq scan, если таблица маленькая или запрос возвращает большую долю строк. Проверяйте EXPLAIN (ANALYZE, BUFFERS).",
+        "question_audio": "audio/py-middle-059_question.mp3"
+      },
+      {
+        "id": "py-middle-058~py-middle-060",
+        "card_id": "py-middle-060",
+        "question": "Когда нужен составной B-tree индекс?",
+        "answer": "Когда часто фильтруют/сортируют по нескольким колонкам. Порядок столбцов имеет значение: например, индекс (user_id, created_at) подходит для WHERE user_id = ... ORDER BY created_at. Выбор определяется реальными условиями запросов и распределением данных.",
+        "question_audio": "audio/py-middle-060_question.mp3"
+      }
+    ],
+    "py-middle-059": [
+      {
+        "id": "py-middle-059~py-middle-060",
+        "card_id": "py-middle-060",
+        "question": "Когда нужен составной B-tree индекс?",
+        "answer": "Когда часто фильтруют/сортируют по нескольким колонкам. Порядок столбцов имеет значение: например, индекс (user_id, created_at) подходит для WHERE user_id = ... ORDER BY created_at. Выбор определяется реальными условиями запросов и распределением данных.",
+        "question_audio": "audio/py-middle-060_question.mp3"
+      },
+      {
+        "id": "py-middle-059~py-middle-062",
+        "card_id": "py-middle-062",
+        "question": "Что такое EXPLAIN ANALYZE в PostgreSQL?",
+        "answer": "EXPLAIN показывает план выполнения запроса, а ANALYZE реально его запускает и собирает фактические метрики. Смотрите estimated vs actual rows, Seq Scan, Index Scan, Sort, циклы nested loop, buffers. На INSERT/UPDATE/DELETE ANALYZE действительно выполняет изменения — применяйте осторожно.",
+        "question_audio": "audio/py-middle-062_question.mp3"
+      }
+    ],
+    "py-middle-060": [
+      {
+        "id": "py-middle-060~py-middle-062",
+        "card_id": "py-middle-062",
+        "question": "Что такое EXPLAIN ANALYZE в PostgreSQL?",
+        "answer": "EXPLAIN показывает план выполнения запроса, а ANALYZE реально его запускает и собирает фактические метрики. Смотрите estimated vs actual rows, Seq Scan, Index Scan, Sort, циклы nested loop, buffers. На INSERT/UPDATE/DELETE ANALYZE действительно выполняет изменения — применяйте осторожно.",
+        "question_audio": "audio/py-middle-062_question.mp3"
+      },
+      {
+        "id": "py-middle-060~py-middle-072",
+        "card_id": "py-middle-072",
+        "question": "Что такое queryset и когда выполняется SQL?",
+        "answer": "QuerySet обычно ленивый: фильтры комбинируются до фактической оценки. SQL исполняется при итерации, list(), len(), bool(), некоторых срезах и др. exists()/count() часто эффективнее, если не нужны сами строки.",
+        "question_audio": "audio/py-middle-072_question.mp3"
+      }
+    ],
+    "py-middle-061": [
+      {
+        "id": "py-middle-061~py-middle-071",
+        "card_id": "py-middle-071",
+        "question": "Чем select_related отличается от prefetch_related?",
+        "answer": "select_related делает SQL JOIN для одиночных связей, prefetch_related выполняет отдельные запросы и связывает результаты в Python для many-to-many и reverse FK. Неправильный выбор приводит к лишним запросам или чрезмерному объёму данных.",
+        "question_audio": "audio/py-middle-071_question.mp3"
+      },
+      {
+        "id": "py-middle-061~py-middle-059",
+        "card_id": "py-middle-059",
+        "question": "Что такое индекс и почему он не всегда ускоряет запрос?",
+        "answer": "Индекс ускоряет отбор или сортировку по подходящим условиям, но требует места и замедляет записи/обновления. Планировщик может выбрать seq scan, если таблица маленькая или запрос возвращает большую долю строк. Проверяйте EXPLAIN (ANALYZE, BUFFERS).",
+        "question_audio": "audio/py-middle-059_question.mp3"
+      }
+    ],
+    "py-middle-062": [
+      {
+        "id": "py-middle-062~py-middle-072",
+        "card_id": "py-middle-072",
+        "question": "Что такое queryset и когда выполняется SQL?",
+        "answer": "QuerySet обычно ленивый: фильтры комбинируются до фактической оценки. SQL исполняется при итерации, list(), len(), bool(), некоторых срезах и др. exists()/count() часто эффективнее, если не нужны сами строки.",
+        "question_audio": "audio/py-middle-072_question.mp3"
+      },
+      {
+        "id": "py-middle-062~py-middle-061",
+        "card_id": "py-middle-061",
+        "question": "Что такое N+1 запрос и как его исправлять?",
+        "answer": "Один запрос выбирает N сущностей, а обращение к связи для каждой создаёт ещё N запросов. В Django select_related обычно используется для ForeignKey/OneToOne, prefetch_related — для множественных отношений. Проверяйте количество SQL-запросов тестом или профилем.",
+        "question_audio": "audio/py-middle-061_question.mp3"
+      }
+    ],
+    "py-middle-063": [
+      {
+        "id": "py-middle-063~py-middle-115",
+        "card_id": "py-middle-115",
+        "question": "Как безопасно уменьшить остаток товара при параллельных заказах?",
+        "answer": "Условный атомарный UPDATE не допускает ухода остатка в минус. Успех определяется количеством обновлённых строк; остальные действия заказа должны быть в одной корректно спроектированной транзакции.",
+        "question_audio": "audio/py-middle-115_question.mp3"
+      },
+      {
+        "id": "py-middle-063~py-middle-067",
+        "card_id": "py-middle-067",
+        "question": "Что такое идемпотентность операций?",
+        "answer": "Повторное выполнение не меняет итоговый результат сверх первого успешного применения. Для оплаты или создания заказов используют idempotency key и уникальное ограничение в БД, а не только проверку на уровне Python. Retry без идемпотентности может создавать дубликаты.",
+        "question_audio": "audio/py-middle-067_question.mp3"
+      }
+    ],
+    "py-middle-064": [
+      {
+        "id": "py-middle-064~py-middle-059",
+        "card_id": "py-middle-059",
+        "question": "Что такое индекс и почему он не всегда ускоряет запрос?",
+        "answer": "Индекс ускоряет отбор или сортировку по подходящим условиям, но требует места и замедляет записи/обновления. Планировщик может выбрать seq scan, если таблица маленькая или запрос возвращает большую долю строк. Проверяйте EXPLAIN (ANALYZE, BUFFERS).",
+        "question_audio": "audio/py-middle-059_question.mp3"
+      },
+      {
+        "id": "py-middle-064~py-middle-060",
+        "card_id": "py-middle-060",
+        "question": "Когда нужен составной B-tree индекс?",
+        "answer": "Когда часто фильтруют/сортируют по нескольким колонкам. Порядок столбцов имеет значение: например, индекс (user_id, created_at) подходит для WHERE user_id = ... ORDER BY created_at. Выбор определяется реальными условиями запросов и распределением данных.",
+        "question_audio": "audio/py-middle-060_question.mp3"
+      }
+    ],
+    "py-middle-065": [
+      {
+        "id": "py-middle-065~py-middle-066",
+        "card_id": "py-middle-066",
+        "question": "Что такое cache stampede и как его предотвращать?",
+        "answer": "При истечении популярного ключа сотни запросов одновременно пересчитывают значение. Используют staggered TTL/jitter, блокировку на пересчёт, stale-while-revalidate, прогрев или request coalescing. Не превращайте кэш в единственное хранилище критичных данных.",
+        "question_audio": "audio/py-middle-066_question.mp3"
+      },
+      {
+        "id": "py-middle-065~py-middle-110",
+        "card_id": "py-middle-110",
+        "question": "Написать простой LRU-кэш",
+        "answer": "На собеседовании можно показать functools.lru_cache или реализовать через OrderedDict. Объясните ограничение размера, устаревание данных и потокобезопасность; lru_cache не является распределённым кэшем.",
+        "question_audio": "audio/py-middle-110_question.mp3"
+      }
+    ],
+    "py-middle-066": [
+      {
+        "id": "py-middle-066~py-middle-067",
+        "card_id": "py-middle-067",
+        "question": "Что такое идемпотентность операций?",
+        "answer": "Повторное выполнение не меняет итоговый результат сверх первого успешного применения. Для оплаты или создания заказов используют idempotency key и уникальное ограничение в БД, а не только проверку на уровне Python. Retry без идемпотентности может создавать дубликаты.",
+        "question_audio": "audio/py-middle-067_question.mp3"
+      },
+      {
+        "id": "py-middle-066~py-middle-056",
+        "card_id": "py-middle-056",
+        "question": "Что такое ACID?",
+        "answer": "Atomicity — транзакция целиком или откатывается; Consistency — соблюдение заданных ограничений; Isolation — степень изоляции параллельных операций; Durability — подтверждённые изменения переживают отказ согласно гарантиям СУБД. ACID не отменяет необходимости корректной бизнес-логики.",
+        "question_audio": "audio/py-middle-056_question.mp3"
+      }
+    ],
+    "py-middle-067": [
+      {
+        "id": "py-middle-067~py-middle-055",
+        "card_id": "py-middle-055",
+        "question": "Как не потерять задачу после записи в БД?",
+        "answer": "Если поставить задачу в очередь до commit, worker может прочитать ещё незафиксированные данные. В Django используйте transaction.on_commit(...) для публикации после commit. Для более сильных гарантий между БД и брокером применяют transactional outbox.",
+        "question_audio": "audio/py-middle-055_question.mp3"
+      },
+      {
+        "id": "py-middle-067~py-middle-056",
+        "card_id": "py-middle-056",
+        "question": "Что такое ACID?",
+        "answer": "Atomicity — транзакция целиком или откатывается; Consistency — соблюдение заданных ограничений; Isolation — степень изоляции параллельных операций; Durability — подтверждённые изменения переживают отказ согласно гарантиям СУБД. ACID не отменяет необходимости корректной бизнес-логики.",
+        "question_audio": "audio/py-middle-056_question.mp3"
+      }
+    ],
+    "py-middle-068": [
+      {
+        "id": "py-middle-068~py-middle-069",
+        "card_id": "py-middle-069",
+        "question": "В чём разница между WSGI и ASGI?",
+        "answer": "WSGI задаёт синхронный интерфейс приложения и сервера. ASGI поддерживает асинхронную обработку, длительные соединения, WebSocket и lifespan. Асинхронный сервер сам по себе не делает синхронную ORM/библиотеку неблокирующей.",
+        "question_audio": "audio/py-middle-069_question.mp3"
+      },
+      {
+        "id": "py-middle-068~py-middle-073",
+        "card_id": "py-middle-073",
+        "question": "Как избежать бизнес-логики в контроллере?",
+        "answer": "View/endpoint отвечает за транспорт: входные данные, аутентификацию, HTTP-ответ. Сервис выполняет бизнес-операцию, репозиторий/ORM отвечает за доступ к данным, внешние адаптеры — за интеграции. Не нужно слепо дублировать CRUD в много слоёв, если нет пользы.",
+        "question_audio": "audio/py-middle-073_question.mp3"
+      }
+    ],
+    "py-middle-069": [
+      {
+        "id": "py-middle-069~py-middle-077",
+        "card_id": "py-middle-077",
+        "question": "Какая роль миграций БД?",
+        "answer": "Миграции версионируют изменения схемы и обеспечивают воспроизводимое обновление окружений. На больших таблицах потенциально блокирующие операции надо проектировать: expand-and-contract, backfill, отдельное создание индексов и обратная совместимость старого/нового кода.",
+        "question_audio": "audio/py-middle-077_question.mp3"
+      },
+      {
+        "id": "py-middle-069~py-middle-078",
+        "card_id": "py-middle-078",
+        "question": "Как реализовать загрузку большого файла без переполнения RAM?",
+        "answer": "Обрабатывайте файл чанками или потоково, ограничивайте размер, валидируйте MIME/содержимое, храните вне процесса (object storage) и возвращайте идентификатор задачи для долгой обработки. Для CSV/JSONL полезны генераторы и батчи, а не полный read() в память.",
+        "question_audio": "audio/py-middle-078_question.mp3"
+      }
+    ],
+    "py-middle-070": [
+      {
+        "id": "py-middle-070~py-middle-078",
+        "card_id": "py-middle-078",
+        "question": "Как реализовать загрузку большого файла без переполнения RAM?",
+        "answer": "Обрабатывайте файл чанками или потоково, ограничивайте размер, валидируйте MIME/содержимое, храните вне процесса (object storage) и возвращайте идентификатор задачи для долгой обработки. Для CSV/JSONL полезны генераторы и батчи, а не полный read() в память.",
+        "question_audio": "audio/py-middle-078_question.mp3"
+      },
+      {
+        "id": "py-middle-070~py-middle-079",
+        "card_id": "py-middle-079",
+        "question": "Что делать, если внешний API недоступен?",
+        "answer": "Задайте тайм-аут на каждый вызов, ограниченный retry с backoff+jitter для безопасных повторов, circuit breaker при необходимости, идемпотентность и метрики. Важно различать 4xx, 5xx, timeout и сетевой сбой: повторять любые запросы подряд опасно.",
+        "question_audio": "audio/py-middle-079_question.mp3"
+      }
+    ],
+    "py-middle-071": [
+      {
+        "id": "py-middle-071~py-middle-059",
+        "card_id": "py-middle-059",
+        "question": "Что такое индекс и почему он не всегда ускоряет запрос?",
+        "answer": "Индекс ускоряет отбор или сортировку по подходящим условиям, но требует места и замедляет записи/обновления. Планировщик может выбрать seq scan, если таблица маленькая или запрос возвращает большую долю строк. Проверяйте EXPLAIN (ANALYZE, BUFFERS).",
+        "question_audio": "audio/py-middle-059_question.mp3"
+      },
+      {
+        "id": "py-middle-071~py-middle-060",
+        "card_id": "py-middle-060",
+        "question": "Когда нужен составной B-tree индекс?",
+        "answer": "Когда часто фильтруют/сортируют по нескольким колонкам. Порядок столбцов имеет значение: например, индекс (user_id, created_at) подходит для WHERE user_id = ... ORDER BY created_at. Выбор определяется реальными условиями запросов и распределением данных.",
+        "question_audio": "audio/py-middle-060_question.mp3"
+      }
+    ],
+    "py-middle-072": [
+      {
+        "id": "py-middle-072~py-middle-061",
+        "card_id": "py-middle-061",
+        "question": "Что такое N+1 запрос и как его исправлять?",
+        "answer": "Один запрос выбирает N сущностей, а обращение к связи для каждой создаёт ещё N запросов. В Django select_related обычно используется для ForeignKey/OneToOne, prefetch_related — для множественных отношений. Проверяйте количество SQL-запросов тестом или профилем.",
+        "question_audio": "audio/py-middle-061_question.mp3"
+      },
+      {
+        "id": "py-middle-072~py-middle-071",
+        "card_id": "py-middle-071",
+        "question": "Чем select_related отличается от prefetch_related?",
+        "answer": "select_related делает SQL JOIN для одиночных связей, prefetch_related выполняет отдельные запросы и связывает результаты в Python для many-to-many и reverse FK. Неправильный выбор приводит к лишним запросам или чрезмерному объёму данных.",
+        "question_audio": "audio/py-middle-071_question.mp3"
+      }
+    ],
+    "py-middle-073": [
+      {
+        "id": "py-middle-073~py-middle-068",
+        "card_id": "py-middle-068",
+        "question": "Как проходит HTTP-запрос в Django?",
+        "answer": "Входящий запрос проходит ASGI/WSGI-сервер, middleware, маршрутизацию URL, view, работу с БД/сервисами и формирование Response; затем middleware может обработать ответ. Важны аутентификация, обработка ошибок, транзакции и middleware-order.",
+        "question_audio": "audio/py-middle-068_question.mp3"
+      },
+      {
+        "id": "py-middle-073~py-middle-069",
+        "card_id": "py-middle-069",
+        "question": "В чём разница между WSGI и ASGI?",
+        "answer": "WSGI задаёт синхронный интерфейс приложения и сервера. ASGI поддерживает асинхронную обработку, длительные соединения, WebSocket и lifespan. Асинхронный сервер сам по себе не делает синхронную ORM/библиотеку неблокирующей.",
+        "question_audio": "audio/py-middle-069_question.mp3"
+      }
+    ],
+    "py-middle-074": [
+      {
+        "id": "py-middle-074~py-middle-014",
+        "card_id": "py-middle-014",
+        "question": "Как устроены аннотации типов в Python?",
+        "answer": "Подсказки типов улучшают контракты, IDE и статическую проверку (mypy/pyright), но по умолчанию не обеспечивают runtime-валидацию. Optional[T] обозначает T | None, а не «параметр необязателен». В FastAPI/Pydantic типы могут использоваться для отдельной проверки входных данных.",
+        "question_audio": "audio/py-middle-014_question.mp3"
+      },
+      {
+        "id": "py-middle-074~py-middle-075",
+        "card_id": "py-middle-075",
+        "question": "Как использовать Depends в FastAPI?",
+        "answer": "Depends объявляет зависимость, которую FastAPI разрешает для запроса: сессия БД, пользователь, сервис, настройки. Генераторные зависимости с yield могут освобождать ресурсы. Для тестов зависимости удобно подменять через dependency_overrides.",
+        "question_audio": "audio/py-middle-075_question.mp3"
+      }
+    ],
+    "py-middle-075": [
+      {
+        "id": "py-middle-075~py-middle-070",
+        "card_id": "py-middle-070",
+        "question": "Что делает transaction.atomic() в Django?",
+        "answer": "Создаёт транзакционную область; при ошибке изменения откатываются. Вложенные atomic обычно используют savepoint. Для согласованной работы с очередью отправляйте задачу после commit; транзакции держите короткими.",
+        "question_audio": "audio/py-middle-070_question.mp3"
+      },
+      {
+        "id": "py-middle-075~py-middle-071",
+        "card_id": "py-middle-071",
+        "question": "Чем select_related отличается от prefetch_related?",
+        "answer": "select_related делает SQL JOIN для одиночных связей, prefetch_related выполняет отдельные запросы и связывает результаты в Python для many-to-many и reverse FK. Неправильный выбор приводит к лишним запросам или чрезмерному объёму данных.",
+        "question_audio": "audio/py-middle-071_question.mp3"
+      }
+    ],
+    "py-middle-076": [
+      {
+        "id": "py-middle-076~py-middle-071",
+        "card_id": "py-middle-071",
+        "question": "Чем select_related отличается от prefetch_related?",
+        "answer": "select_related делает SQL JOIN для одиночных связей, prefetch_related выполняет отдельные запросы и связывает результаты в Python для many-to-many и reverse FK. Неправильный выбор приводит к лишним запросам или чрезмерному объёму данных.",
+        "question_audio": "audio/py-middle-071_question.mp3"
+      },
+      {
+        "id": "py-middle-076~py-middle-072",
+        "card_id": "py-middle-072",
+        "question": "Что такое queryset и когда выполняется SQL?",
+        "answer": "QuerySet обычно ленивый: фильтры комбинируются до фактической оценки. SQL исполняется при итерации, list(), len(), bool(), некоторых срезах и др. exists()/count() часто эффективнее, если не нужны сами строки.",
+        "question_audio": "audio/py-middle-072_question.mp3"
+      }
+    ],
+    "py-middle-077": [
+      {
+        "id": "py-middle-077~py-middle-105",
+        "card_id": "py-middle-105",
+        "question": "Что такое zero-downtime деплой?",
+        "answer": "Пошаговая замена инстансов без заметного простоя, проверка readiness и обратная совместимость приложения со схемой БД. Опасные изменения БД делают в несколько этапов; наличие двух одновременно работающих версий приложения учитывают при проектировании API и миграций.",
+        "question_audio": "audio/py-middle-105_question.mp3"
+      },
+      {
+        "id": "py-middle-077~py-middle-070",
+        "card_id": "py-middle-070",
+        "question": "Что делает transaction.atomic() в Django?",
+        "answer": "Создаёт транзакционную область; при ошибке изменения откатываются. Вложенные atomic обычно используют savepoint. Для согласованной работы с очередью отправляйте задачу после commit; транзакции держите короткими.",
+        "question_audio": "audio/py-middle-070_question.mp3"
+      }
+    ],
+    "py-middle-078": [
+      {
+        "id": "py-middle-078~py-middle-024",
+        "card_id": "py-middle-024",
+        "question": "Что такое генератор и зачем yield?",
+        "answer": "Генератор вычисляет значения лениво и сохраняет состояние между next(). Он полезен для потоковых данных и больших последовательностей, но обычно исчерпывается после обхода. yield from делегирует выдачу значений другому итерируемому объекту.",
+        "question_audio": "audio/py-middle-024_question.mp3"
+      },
+      {
+        "id": "py-middle-078~py-middle-114",
+        "card_id": "py-middle-114",
+        "question": "Сделать обработку 1000 элементов батчами",
+        "answer": "Генератор отдаёт фрагменты фиксированного размера, чтобы не загружать всё в память. Ниже решение для любого iterable; размер батча должен быть положительным.",
+        "question_audio": "audio/py-middle-114_question.mp3"
+      }
+    ],
+    "py-middle-079": [
+      {
+        "id": "py-middle-079~py-middle-067",
+        "card_id": "py-middle-067",
+        "question": "Что такое идемпотентность операций?",
+        "answer": "Повторное выполнение не меняет итоговый результат сверх первого успешного применения. Для оплаты или создания заказов используют idempotency key и уникальное ограничение в БД, а не только проверку на уровне Python. Retry без идемпотентности может создавать дубликаты.",
+        "question_audio": "audio/py-middle-067_question.mp3"
+      },
+      {
+        "id": "py-middle-079~py-middle-111",
+        "card_id": "py-middle-111",
+        "question": "Сделать retry с backoff для временных ошибок",
+        "answer": "Повторять только заведомо безопасные операции/ошибки, ограничить попытки, учитывать timeout и добавить jitter. Для платежей и создания объектов повтор возможен только с идемпотентным контрактом.",
+        "question_audio": "audio/py-middle-111_question.mp3"
+      }
+    ],
+    "py-middle-080": [
+      {
+        "id": "py-middle-080~py-middle-054",
+        "card_id": "py-middle-054",
+        "question": "Для чего нужны Celery и брокер сообщений?",
+        "answer": "Celery выносит долгие/повторяемые задачи из HTTP-запроса в worker. Брокер (например, Redis или RabbitMQ) доставляет задания, но доставка не равна ровно-однократному выполнению. Нужны идемпотентность, retry, наблюдаемость и учёт отказов.",
+        "question_audio": "audio/py-middle-054_question.mp3"
+      },
+      {
+        "id": "py-middle-080~py-middle-055",
+        "card_id": "py-middle-055",
+        "question": "Как не потерять задачу после записи в БД?",
+        "answer": "Если поставить задачу в очередь до commit, worker может прочитать ещё незафиксированные данные. В Django используйте transaction.on_commit(...) для публикации после commit. Для более сильных гарантий между БД и брокером применяют transactional outbox.",
+        "question_audio": "audio/py-middle-055_question.mp3"
+      }
+    ],
+    "py-middle-081": [
+      {
+        "id": "py-middle-081~py-middle-082",
+        "card_id": "py-middle-082",
+        "question": "Что означают основные HTTP-статусы?",
+        "answer": "200 — успех, 201 — создано, 202 — принято в обработку, 204 — без тела; 400 — некорректный запрос, 401 — нет корректной аутентификации, 403 — доступ запрещён, 404 — не найдено, 409 — конфликт, 422 — непроходимая валидация содержимого (типично для FastAPI), 429 — rate limit, 500 — ошибка сервера.",
+        "question_audio": "audio/py-middle-082_question.mp3"
+      },
+      {
+        "id": "py-middle-081~py-middle-085",
+        "card_id": "py-middle-085",
+        "question": "Аутентификация и авторизация: в чём разница?",
+        "answer": "Аутентификация отвечает «кто ты?», авторизация — «можно ли тебе это действие над этим объектом?». Проверки прав должны происходить на сервере для конкретного ресурса, а не только в интерфейсе. Типичная ошибка — IDOR: доступ по чужому id без проверки владельца.",
+        "question_audio": "audio/py-middle-085_question.mp3"
+      }
+    ],
+    "py-middle-082": [
+      {
+        "id": "py-middle-082~py-middle-085",
+        "card_id": "py-middle-085",
+        "question": "Аутентификация и авторизация: в чём разница?",
+        "answer": "Аутентификация отвечает «кто ты?», авторизация — «можно ли тебе это действие над этим объектом?». Проверки прав должны происходить на сервере для конкретного ресурса, а не только в интерфейсе. Типичная ошибка — IDOR: доступ по чужому id без проверки владельца.",
+        "question_audio": "audio/py-middle-085_question.mp3"
+      },
+      {
+        "id": "py-middle-082~py-middle-084",
+        "card_id": "py-middle-084",
+        "question": "JWT против серверных сессий?",
+        "answer": "JWT — подписанный токен с claims, который сервер может проверить без запроса к сессии; отзыв и ротация сложнее, а токен не шифрует содержимое по умолчанию. Серверная сессия проще отзывается, но требует хранилища/обмена состоянием. В обоих случаях обязательны HTTPS, срок жизни и безопасное хранение.",
+        "question_audio": "audio/py-middle-084_question.mp3"
+      }
+    ],
+    "py-middle-083": [
+      {
+        "id": "py-middle-083~py-middle-077",
+        "card_id": "py-middle-077",
+        "question": "Какая роль миграций БД?",
+        "answer": "Миграции версионируют изменения схемы и обеспечивают воспроизводимое обновление окружений. На больших таблицах потенциально блокирующие операции надо проектировать: expand-and-contract, backfill, отдельное создание индексов и обратная совместимость старого/нового кода.",
+        "question_audio": "audio/py-middle-077_question.mp3"
+      },
+      {
+        "id": "py-middle-083~py-middle-105",
+        "card_id": "py-middle-105",
+        "question": "Что такое zero-downtime деплой?",
+        "answer": "Пошаговая замена инстансов без заметного простоя, проверка readiness и обратная совместимость приложения со схемой БД. Опасные изменения БД делают в несколько этапов; наличие двух одновременно работающих версий приложения учитывают при проектировании API и миграций.",
+        "question_audio": "audio/py-middle-105_question.mp3"
+      }
+    ],
+    "py-middle-084": [
+      {
+        "id": "py-middle-084~py-middle-085",
+        "card_id": "py-middle-085",
+        "question": "Аутентификация и авторизация: в чём разница?",
+        "answer": "Аутентификация отвечает «кто ты?», авторизация — «можно ли тебе это действие над этим объектом?». Проверки прав должны происходить на сервере для конкретного ресурса, а не только в интерфейсе. Типичная ошибка — IDOR: доступ по чужому id без проверки владельца.",
+        "question_audio": "audio/py-middle-085_question.mp3"
+      },
+      {
+        "id": "py-middle-084~py-middle-102",
+        "card_id": "py-middle-102",
+        "question": "Как безопасно хранить секреты и конфигурацию?",
+        "answer": "Конфигурацию разделяют по окружениям и передают через env/secret store, не хранят пароли в git и образах. Для production важно планировать ротацию, минимальные права и аудит. Не выводите содержимое секретов в логи при отладке.",
+        "question_audio": "audio/py-middle-102_question.mp3"
+      }
+    ],
+    "py-middle-085": [
+      {
+        "id": "py-middle-085~py-middle-084",
+        "card_id": "py-middle-084",
+        "question": "JWT против серверных сессий?",
+        "answer": "JWT — подписанный токен с claims, который сервер может проверить без запроса к сессии; отзыв и ротация сложнее, а токен не шифрует содержимое по умолчанию. Серверная сессия проще отзывается, но требует хранилища/обмена состоянием. В обоих случаях обязательны HTTPS, срок жизни и безопасное хранение.",
+        "question_audio": "audio/py-middle-084_question.mp3"
+      },
+      {
+        "id": "py-middle-085~py-middle-086",
+        "card_id": "py-middle-086",
+        "question": "Что такое CSRF, XSS и SQL injection?",
+        "answer": "CSRF заставляет браузер отправить нежелательный запрос с авторизационными cookie; помогают CSRF-токены и SameSite. XSS — внедрение исполняемого кода в страницу, лечится корректным escaping и CSP. SQLi предотвращают параметризованные запросы, а не ручное экранирование строк.",
+        "question_audio": "audio/py-middle-086_question.mp3"
+      }
+    ],
+    "py-middle-086": [
+      {
+        "id": "py-middle-086~py-middle-085",
+        "card_id": "py-middle-085",
+        "question": "Аутентификация и авторизация: в чём разница?",
+        "answer": "Аутентификация отвечает «кто ты?», авторизация — «можно ли тебе это действие над этим объектом?». Проверки прав должны происходить на сервере для конкретного ресурса, а не только в интерфейсе. Типичная ошибка — IDOR: доступ по чужому id без проверки владельца.",
+        "question_audio": "audio/py-middle-085_question.mp3"
+      },
+      {
+        "id": "py-middle-086~py-middle-088",
+        "card_id": "py-middle-088",
+        "question": "Что такое SSRF?",
+        "answer": "Server-Side Request Forgery — ситуация, когда сервер по пользовательскому URL обращается к нежелательным внутренним или внешним адресам. Нужны allowlist назначения, ограничения схем/портов, проверки редиректов и DNS/IP, сетевые политики и запрет метаданных облака.",
+        "question_audio": "audio/py-middle-088_question.mp3"
+      }
+    ],
+    "py-middle-087": [
+      {
+        "id": "py-middle-087~py-middle-085",
+        "card_id": "py-middle-085",
+        "question": "Аутентификация и авторизация: в чём разница?",
+        "answer": "Аутентификация отвечает «кто ты?», авторизация — «можно ли тебе это действие над этим объектом?». Проверки прав должны происходить на сервере для конкретного ресурса, а не только в интерфейсе. Типичная ошибка — IDOR: доступ по чужому id без проверки владельца.",
+        "question_audio": "audio/py-middle-085_question.mp3"
+      },
+      {
+        "id": "py-middle-087~py-middle-086",
+        "card_id": "py-middle-086",
+        "question": "Что такое CSRF, XSS и SQL injection?",
+        "answer": "CSRF заставляет браузер отправить нежелательный запрос с авторизационными cookie; помогают CSRF-токены и SameSite. XSS — внедрение исполняемого кода в страницу, лечится корректным escaping и CSP. SQLi предотвращают параметризованные запросы, а не ручное экранирование строк.",
+        "question_audio": "audio/py-middle-086_question.mp3"
+      }
+    ],
+    "py-middle-088": [
+      {
+        "id": "py-middle-088~py-middle-079",
+        "card_id": "py-middle-079",
+        "question": "Что делать, если внешний API недоступен?",
+        "answer": "Задайте тайм-аут на каждый вызов, ограниченный retry с backoff+jitter для безопасных повторов, circuit breaker при необходимости, идемпотентность и метрики. Важно различать 4xx, 5xx, timeout и сетевой сбой: повторять любые запросы подряд опасно.",
+        "question_audio": "audio/py-middle-079_question.mp3"
+      },
+      {
+        "id": "py-middle-088~py-middle-102",
+        "card_id": "py-middle-102",
+        "question": "Как безопасно хранить секреты и конфигурацию?",
+        "answer": "Конфигурацию разделяют по окружениям и передают через env/secret store, не хранят пароли в git и образах. Для production важно планировать ротацию, минимальные права и аудит. Не выводите содержимое секретов в логи при отладке.",
+        "question_audio": "audio/py-middle-102_question.mp3"
+      }
+    ],
+    "py-middle-089": [
+      {
+        "id": "py-middle-089~py-middle-081",
+        "card_id": "py-middle-081",
+        "question": "Какие HTTP-методы и их семантика?",
+        "answer": "GET читает, POST создаёт/инициирует действие, PUT заменяет представление, PATCH частично обновляет, DELETE удаляет. GET/PUT/DELETE по семантике идемпотентны, но реализация должна соблюсти это; POST может стать идемпотентным с ключом. GET нельзя использовать для побочных изменений.",
+        "question_audio": "audio/py-middle-081_question.mp3"
+      },
+      {
+        "id": "py-middle-089~py-middle-082",
+        "card_id": "py-middle-082",
+        "question": "Что означают основные HTTP-статусы?",
+        "answer": "200 — успех, 201 — создано, 202 — принято в обработку, 204 — без тела; 400 — некорректный запрос, 401 — нет корректной аутентификации, 403 — доступ запрещён, 404 — не найдено, 409 — конфликт, 422 — непроходимая валидация содержимого (типично для FastAPI), 429 — rate limit, 500 — ошибка сервера.",
+        "question_audio": "audio/py-middle-082_question.mp3"
+      }
+    ],
+    "py-middle-090": [
+      {
+        "id": "py-middle-090~py-middle-092",
+        "card_id": "py-middle-092",
+        "question": "Как правильно использовать mock?",
+        "answer": "Мокайте границы, которые не относятся к тестируемому поведению: HTTP-клиент, внешнюю очередь, время. Подменяйте объект там, где он используется (lookup location), а не обязательно там, где он определён. Проверяйте не только вызов, но и видимый результат/контракт.",
+        "question_audio": "audio/py-middle-092_question.mp3"
+      },
+      {
+        "id": "py-middle-090~py-middle-094",
+        "card_id": "py-middle-094",
+        "question": "Что тестировать в API, кроме happy path?",
+        "answer": "Валидацию, пустые/неизвестные id, права разных ролей, конфликт обновления, повторные запросы, тайм-аут внешнего API, транзакционный откат, пагинацию и ограничения размеров. Проверяйте схему ответов и отсутствие утечки внутренних ошибок.",
+        "question_audio": "audio/py-middle-094_question.mp3"
+      }
+    ],
+    "py-middle-091": [
+      {
+        "id": "py-middle-091~py-middle-092",
+        "card_id": "py-middle-092",
+        "question": "Как правильно использовать mock?",
+        "answer": "Мокайте границы, которые не относятся к тестируемому поведению: HTTP-клиент, внешнюю очередь, время. Подменяйте объект там, где он используется (lookup location), а не обязательно там, где он определён. Проверяйте не только вызов, но и видимый результат/контракт.",
+        "question_audio": "audio/py-middle-092_question.mp3"
+      },
+      {
+        "id": "py-middle-091~py-middle-093",
+        "card_id": "py-middle-093",
+        "question": "Что такое параметризованные тесты?",
+        "answer": "pytest.mark.parametrize запускает один сценарий на наборе входов/ожиданий. Это удобно для граничных значений, ошибок и регрессионных кейсов. Для алгоритмов полезны property-based тесты с Hypothesis.",
+        "question_audio": "audio/py-middle-093_question.mp3"
+      }
+    ],
+    "py-middle-092": [
+      {
+        "id": "py-middle-092~py-middle-090",
+        "card_id": "py-middle-090",
+        "question": "Чем unit-тест отличается от интеграционного?",
+        "answer": "Unit проверяет небольшую единицу логики с быстрыми контролируемыми зависимостями. Интеграционный тест проверяет взаимодействие реальных компонентов: ORM и PostgreSQL, HTTP и приложение, Redis/Celery. Не следует всё мокать: часть ошибок живёт именно на границах.",
+        "question_audio": "audio/py-middle-090_question.mp3"
+      },
+      {
+        "id": "py-middle-092~py-middle-091",
+        "card_id": "py-middle-091",
+        "question": "Что такое pytest fixture и scope?",
+        "answer": "Фикстура создаёт и очищает тестовые зависимости. scope=function — на тест, module/session — на более длинную область. yield разделяет setup/teardown. Общие фикстуры удобны, но нельзя допускать неконтролируемой утечки состояния между тестами.",
+        "question_audio": "audio/py-middle-091_question.mp3"
+      }
+    ],
+    "py-middle-093": [
+      {
+        "id": "py-middle-093~py-middle-091",
+        "card_id": "py-middle-091",
+        "question": "Что такое pytest fixture и scope?",
+        "answer": "Фикстура создаёт и очищает тестовые зависимости. scope=function — на тест, module/session — на более длинную область. yield разделяет setup/teardown. Общие фикстуры удобны, но нельзя допускать неконтролируемой утечки состояния между тестами.",
+        "question_audio": "audio/py-middle-091_question.mp3"
+      },
+      {
+        "id": "py-middle-093~py-middle-092",
+        "card_id": "py-middle-092",
+        "question": "Как правильно использовать mock?",
+        "answer": "Мокайте границы, которые не относятся к тестируемому поведению: HTTP-клиент, внешнюю очередь, время. Подменяйте объект там, где он используется (lookup location), а не обязательно там, где он определён. Проверяйте не только вызов, но и видимый результат/контракт.",
+        "question_audio": "audio/py-middle-092_question.mp3"
+      }
+    ],
+    "py-middle-094": [
+      {
+        "id": "py-middle-094~py-middle-092",
+        "card_id": "py-middle-092",
+        "question": "Как правильно использовать mock?",
+        "answer": "Мокайте границы, которые не относятся к тестируемому поведению: HTTP-клиент, внешнюю очередь, время. Подменяйте объект там, где он используется (lookup location), а не обязательно там, где он определён. Проверяйте не только вызов, но и видимый результат/контракт.",
+        "question_audio": "audio/py-middle-092_question.mp3"
+      },
+      {
+        "id": "py-middle-094~py-middle-093",
+        "card_id": "py-middle-093",
+        "question": "Что такое параметризованные тесты?",
+        "answer": "pytest.mark.parametrize запускает один сценарий на наборе входов/ожиданий. Это удобно для граничных значений, ошибок и регрессионных кейсов. Для алгоритмов полезны property-based тесты с Hypothesis.",
+        "question_audio": "audio/py-middle-093_question.mp3"
+      }
+    ],
+    "py-middle-095": [
+      {
+        "id": "py-middle-095~py-middle-062",
+        "card_id": "py-middle-062",
+        "question": "Что такое EXPLAIN ANALYZE в PostgreSQL?",
+        "answer": "EXPLAIN показывает план выполнения запроса, а ANALYZE реально его запускает и собирает фактические метрики. Смотрите estimated vs actual rows, Seq Scan, Index Scan, Sort, циклы nested loop, buffers. На INSERT/UPDATE/DELETE ANALYZE действительно выполняет изменения — применяйте осторожно.",
+        "question_audio": "audio/py-middle-062_question.mp3"
+      },
+      {
+        "id": "py-middle-095~py-middle-104",
+        "card_id": "py-middle-104",
+        "question": "Что важнее при оптимизации: CPU, RAM, SQL или сеть?",
+        "answer": "Сначала измерить: высокая задержка API часто объясняется SQL-запросами и сетью, а не «медленным Python». Для CPU-bound вычислений — профилирование и параллелизм; для БД — индексы/батчинг; для сети — тайм-ауты/пулы; для RAM — потоковая обработка.",
+        "question_audio": "audio/py-middle-104_question.mp3"
+      }
+    ],
+    "py-middle-096": [
+      {
+        "id": "py-middle-096~py-middle-077",
+        "card_id": "py-middle-077",
+        "question": "Какая роль миграций БД?",
+        "answer": "Миграции версионируют изменения схемы и обеспечивают воспроизводимое обновление окружений. На больших таблицах потенциально блокирующие операции надо проектировать: expand-and-contract, backfill, отдельное создание индексов и обратная совместимость старого/нового кода.",
+        "question_audio": "audio/py-middle-077_question.mp3"
+      },
+      {
+        "id": "py-middle-096~py-middle-094",
+        "card_id": "py-middle-094",
+        "question": "Что тестировать в API, кроме happy path?",
+        "answer": "Валидацию, пустые/неизвестные id, права разных ролей, конфликт обновления, повторные запросы, тайм-аут внешнего API, транзакционный откат, пагинацию и ограничения размеров. Проверяйте схему ответов и отсутствие утечки внутренних ошибок.",
+        "question_audio": "audio/py-middle-094_question.mp3"
+      }
+    ],
+    "py-middle-097": [
+      {
+        "id": "py-middle-097~py-middle-095",
+        "card_id": "py-middle-095",
+        "question": "Как искать утечку памяти или медленный endpoint?",
+        "answer": "Сначала воспроизведите и измерьте: latency p50/p95/p99, SQL-count, CPU, RSS, рост объектов. Используйте cProfile/py-spy, tracemalloc и EXPLAIN ANALYZE. Оптимизируйте доказанный bottleneck; бессистемное добавление кэша может усложнить систему.",
+        "question_audio": "audio/py-middle-095_question.mp3"
+      },
+      {
+        "id": "py-middle-097~py-middle-102",
+        "card_id": "py-middle-102",
+        "question": "Как безопасно хранить секреты и конфигурацию?",
+        "answer": "Конфигурацию разделяют по окружениям и передают через env/secret store, не хранят пароли в git и образах. Для production важно планировать ротацию, минимальные права и аудит. Не выводите содержимое секретов в логи при отладке.",
+        "question_audio": "audio/py-middle-102_question.mp3"
+      }
+    ],
+    "py-middle-098": [
+      {
+        "id": "py-middle-098~py-middle-105",
+        "card_id": "py-middle-105",
+        "question": "Что такое zero-downtime деплой?",
+        "answer": "Пошаговая замена инстансов без заметного простоя, проверка readiness и обратная совместимость приложения со схемой БД. Опасные изменения БД делают в несколько этапов; наличие двух одновременно работающих версий приложения учитывают при проектировании API и миграций.",
+        "question_audio": "audio/py-middle-105_question.mp3"
+      },
+      {
+        "id": "py-middle-098~py-middle-099",
+        "card_id": "py-middle-099",
+        "question": "Что даёт multi-stage Docker build?",
+        "answer": "Разделяет этап сборки с компиляторами/зависимостями и компактный runtime-образ. Это уменьшает итоговый образ и поверхность атаки. Полезны закрепление версий, .dockerignore, непривилегированный пользователь и отдельные тома для данных.",
+        "question_audio": "audio/py-middle-099_question.mp3"
+      }
+    ],
+    "py-middle-099": [
+      {
+        "id": "py-middle-099~py-middle-100",
+        "card_id": "py-middle-100",
+        "question": "В чём разница между healthcheck, readiness и liveness?",
+        "answer": "Liveness определяет, жив ли процесс и нужно ли его перезапустить; readiness — может ли инстанс принимать трафик; healthcheck в Docker — общий механизм проверки состояния. Нельзя бездумно связывать liveness с временным падением PostgreSQL, иначе получите цикл рестартов.",
+        "question_audio": "audio/py-middle-100_question.mp3"
+      },
+      {
+        "id": "py-middle-099~py-middle-101",
+        "card_id": "py-middle-101",
+        "question": "Что будет при запуске нескольких worker-процессов?",
+        "answer": "Память и локальные переменные не разделяются между процессами. In-memory cache, locks и фоновые задачки в каждом worker будут отдельными. Общее состояние держите в БД/Redis, а singleton-задачи запускайте через отдельный планировщик или распределённую координацию.",
+        "question_audio": "audio/py-middle-101_question.mp3"
+      }
+    ],
+    "py-middle-100": [
+      {
+        "id": "py-middle-100~py-middle-101",
+        "card_id": "py-middle-101",
+        "question": "Что будет при запуске нескольких worker-процессов?",
+        "answer": "Память и локальные переменные не разделяются между процессами. In-memory cache, locks и фоновые задачки в каждом worker будут отдельными. Общее состояние держите в БД/Redis, а singleton-задачи запускайте через отдельный планировщик или распределённую координацию.",
+        "question_audio": "audio/py-middle-101_question.mp3"
+      },
+      {
+        "id": "py-middle-100~py-middle-103",
+        "card_id": "py-middle-103",
+        "question": "Как организовать graceful shutdown веб-приложения?",
+        "answer": "Перестать принимать новые запросы, дождаться активных в пределах timeout, завершить background tasks, закрыть подключения и отправить сигналы готовности. При работе с очередями важно корректно подтверждать сообщения: не потерять задание при выключении worker.",
+        "question_audio": "audio/py-middle-103_question.mp3"
+      }
+    ],
+    "py-middle-101": [
+      {
+        "id": "py-middle-101~py-middle-103",
+        "card_id": "py-middle-103",
+        "question": "Как организовать graceful shutdown веб-приложения?",
+        "answer": "Перестать принимать новые запросы, дождаться активных в пределах timeout, завершить background tasks, закрыть подключения и отправить сигналы готовности. При работе с очередями важно корректно подтверждать сообщения: не потерять задание при выключении worker.",
+        "question_audio": "audio/py-middle-103_question.mp3"
+      },
+      {
+        "id": "py-middle-101~py-middle-077",
+        "card_id": "py-middle-077",
+        "question": "Какая роль миграций БД?",
+        "answer": "Миграции версионируют изменения схемы и обеспечивают воспроизводимое обновление окружений. На больших таблицах потенциально блокирующие операции надо проектировать: expand-and-contract, backfill, отдельное создание индексов и обратная совместимость старого/нового кода.",
+        "question_audio": "audio/py-middle-077_question.mp3"
+      }
+    ],
+    "py-middle-102": [
+      {
+        "id": "py-middle-102~py-middle-101",
+        "card_id": "py-middle-101",
+        "question": "Что будет при запуске нескольких worker-процессов?",
+        "answer": "Память и локальные переменные не разделяются между процессами. In-memory cache, locks и фоновые задачки в каждом worker будут отдельными. Общее состояние держите в БД/Redis, а singleton-задачи запускайте через отдельный планировщик или распределённую координацию.",
+        "question_audio": "audio/py-middle-101_question.mp3"
+      },
+      {
+        "id": "py-middle-102~py-middle-103",
+        "card_id": "py-middle-103",
+        "question": "Как организовать graceful shutdown веб-приложения?",
+        "answer": "Перестать принимать новые запросы, дождаться активных в пределах timeout, завершить background tasks, закрыть подключения и отправить сигналы готовности. При работе с очередями важно корректно подтверждать сообщения: не потерять задание при выключении worker.",
+        "question_audio": "audio/py-middle-103_question.mp3"
+      }
+    ],
+    "py-middle-103": [
+      {
+        "id": "py-middle-103~py-middle-077",
+        "card_id": "py-middle-077",
+        "question": "Какая роль миграций БД?",
+        "answer": "Миграции версионируют изменения схемы и обеспечивают воспроизводимое обновление окружений. На больших таблицах потенциально блокирующие операции надо проектировать: expand-and-contract, backfill, отдельное создание индексов и обратная совместимость старого/нового кода.",
+        "question_audio": "audio/py-middle-077_question.mp3"
+      },
+      {
+        "id": "py-middle-103~py-middle-105",
+        "card_id": "py-middle-105",
+        "question": "Что такое zero-downtime деплой?",
+        "answer": "Пошаговая замена инстансов без заметного простоя, проверка readiness и обратная совместимость приложения со схемой БД. Опасные изменения БД делают в несколько этапов; наличие двух одновременно работающих версий приложения учитывают при проектировании API и миграций.",
+        "question_audio": "audio/py-middle-105_question.mp3"
+      }
+    ],
+    "py-middle-104": [
+      {
+        "id": "py-middle-104~py-middle-103",
+        "card_id": "py-middle-103",
+        "question": "Как организовать graceful shutdown веб-приложения?",
+        "answer": "Перестать принимать новые запросы, дождаться активных в пределах timeout, завершить background tasks, закрыть подключения и отправить сигналы готовности. При работе с очередями важно корректно подтверждать сообщения: не потерять задание при выключении worker.",
+        "question_audio": "audio/py-middle-103_question.mp3"
+      },
+      {
+        "id": "py-middle-104~py-middle-105",
+        "card_id": "py-middle-105",
+        "question": "Что такое zero-downtime деплой?",
+        "answer": "Пошаговая замена инстансов без заметного простоя, проверка readiness и обратная совместимость приложения со схемой БД. Опасные изменения БД делают в несколько этапов; наличие двух одновременно работающих версий приложения учитывают при проектировании API и миграций.",
+        "question_audio": "audio/py-middle-105_question.mp3"
+      }
+    ],
+    "py-middle-105": [
+      {
+        "id": "py-middle-105~py-middle-099",
+        "card_id": "py-middle-099",
+        "question": "Что даёт multi-stage Docker build?",
+        "answer": "Разделяет этап сборки с компиляторами/зависимостями и компактный runtime-образ. Это уменьшает итоговый образ и поверхность атаки. Полезны закрепление версий, .dockerignore, непривилегированный пользователь и отдельные тома для данных.",
+        "question_audio": "audio/py-middle-099_question.mp3"
+      },
+      {
+        "id": "py-middle-105~py-middle-100",
+        "card_id": "py-middle-100",
+        "question": "В чём разница между healthcheck, readiness и liveness?",
+        "answer": "Liveness определяет, жив ли процесс и нужно ли его перезапустить; readiness — может ли инстанс принимать трафик; healthcheck в Docker — общий механизм проверки состояния. Нельзя бездумно связывать liveness с временным падением PostgreSQL, иначе получите цикл рестартов.",
+        "question_audio": "audio/py-middle-100_question.mp3"
+      }
+    ],
+    "py-middle-106": [
+      {
+        "id": "py-middle-106~py-middle-013",
+        "card_id": "py-middle-013",
+        "question": "Какие гарантии даёт порядок в dict?",
+        "answer": "В современных версиях Python словарь сохраняет порядок вставки ключей. Это не означает сортировку по ключу. Повторное присвоение уже существующему ключу обычно не меняет его позицию; удаление и новая вставка размещают ключ в конце.",
+        "question_audio": "audio/py-middle-013_question.mp3"
+      },
+      {
+        "id": "py-middle-106~py-middle-012",
+        "card_id": "py-middle-012",
+        "question": "Что такое hashable и почему список не ключ словаря?",
+        "answer": "Ключ dict и элемент set должны иметь согласованный и стабильный в процессе хранения хеш. list изменяем и не хешируем. Неизменяемость сама по себе не достаточна: tuple со списком внутри тоже не хешируется; пользовательский объект может иметь свой __hash__.",
+        "question_audio": "audio/py-middle-012_question.mp3"
+      }
+    ],
+    "py-middle-107": [
+      {
+        "id": "py-middle-107~py-middle-030",
+        "card_id": "py-middle-030",
+        "question": "Как выбрать структуру для частот и группировки?",
+        "answer": "Для подсчёта частот — collections.Counter; для группировки списков по ключу — defaultdict(list). Это компактнее и обычно понятнее, чем постоянные ручные проверки наличия ключа.",
+        "question_audio": "audio/py-middle-030_question.mp3"
+      },
+      {
+        "id": "py-middle-107~py-middle-020",
+        "card_id": "py-middle-020",
+        "question": "Чем set отличается от list?",
+        "answer": "set хранит уникальные хешируемые элементы. Проверка принадлежности в среднем O(1), а у list O(n). Порядок элементов set не считается API-гарантией; для упорядоченного уникального набора можно использовать dict.fromkeys(...).",
+        "question_audio": "audio/py-middle-020_question.mp3"
+      }
+    ],
+    "py-middle-108": [
+      {
+        "id": "py-middle-108~py-middle-030",
+        "card_id": "py-middle-030",
+        "question": "Как выбрать структуру для частот и группировки?",
+        "answer": "Для подсчёта частот — collections.Counter; для группировки списков по ключу — defaultdict(list). Это компактнее и обычно понятнее, чем постоянные ручные проверки наличия ключа.",
+        "question_audio": "audio/py-middle-030_question.mp3"
+      },
+      {
+        "id": "py-middle-108~py-middle-021",
+        "card_id": "py-middle-021",
+        "question": "Какова сложность основных операций dict?",
+        "answer": "Получение, вставка и удаление по ключу имеют ожидаемую сложность O(1), но теоретически в худшем случае возможна O(n) при неблагоприятных коллизиях и иных условиях. Операции зависят от корректного __hash__ и __eq__.",
+        "question_audio": "audio/py-middle-021_question.mp3"
+      }
+    ],
+    "py-middle-109": [
+      {
+        "id": "py-middle-109~py-middle-031",
+        "card_id": "py-middle-031",
+        "question": "Что такое closure и late binding?",
+        "answer": "Замыкание сохраняет связь с переменными внешней области видимости. В цикле вложенные функции часто обращаются к одной и той же переменной, значение которой меняется. Чтобы зафиксировать текущее значение, используйте аргумент по умолчанию или фабрику.",
+        "question_audio": "audio/py-middle-031_question.mp3"
+      },
+      {
+        "id": "py-middle-109~py-middle-008",
+        "card_id": "py-middle-008",
+        "question": "Что такое LEGB и зачем global/nonlocal?",
+        "answer": "Разрешение имён идёт Local → Enclosing → Global → Builtins. nonlocal позволяет переназначать имя из охватывающей функции, global — имя уровня модуля. По умолчанию присваивание внутри функции делает имя локальным.",
+        "question_audio": "audio/py-middle-008_question.mp3"
+      }
+    ],
+    "py-middle-110": [
+      {
+        "id": "py-middle-110~py-middle-065",
+        "card_id": "py-middle-065",
+        "question": "Что хранить в Redis, а что в PostgreSQL?",
+        "answer": "PostgreSQL — источник истины для транзакционных данных, связей и запросов. Redis хорош для кэша, временных ключей, счётчиков, ограничителей частоты и некоторых очередей. При кэшировании заранее определите TTL, инвалидацию и поведение при недоступности Redis.",
+        "question_audio": "audio/py-middle-065_question.mp3"
+      },
+      {
+        "id": "py-middle-110~py-middle-066",
+        "card_id": "py-middle-066",
+        "question": "Что такое cache stampede и как его предотвращать?",
+        "answer": "При истечении популярного ключа сотни запросов одновременно пересчитывают значение. Используют staggered TTL/jitter, блокировку на пересчёт, stale-while-revalidate, прогрев или request coalescing. Не превращайте кэш в единственное хранилище критичных данных.",
+        "question_audio": "audio/py-middle-066_question.mp3"
+      }
+    ],
+    "py-middle-111": [
+      {
+        "id": "py-middle-111~py-middle-079",
+        "card_id": "py-middle-079",
+        "question": "Что делать, если внешний API недоступен?",
+        "answer": "Задайте тайм-аут на каждый вызов, ограниченный retry с backoff+jitter для безопасных повторов, circuit breaker при необходимости, идемпотентность и метрики. Важно различать 4xx, 5xx, timeout и сетевой сбой: повторять любые запросы подряд опасно.",
+        "question_audio": "audio/py-middle-079_question.mp3"
+      },
+      {
+        "id": "py-middle-111~py-middle-067",
+        "card_id": "py-middle-067",
+        "question": "Что такое идемпотентность операций?",
+        "answer": "Повторное выполнение не меняет итоговый результат сверх первого успешного применения. Для оплаты или создания заказов используют idempotency key и уникальное ограничение в БД, а не только проверку на уровне Python. Retry без идемпотентности может создавать дубликаты.",
+        "question_audio": "audio/py-middle-067_question.mp3"
+      }
+    ],
+    "py-middle-112": [
+      {
+        "id": "py-middle-112~py-middle-021",
+        "card_id": "py-middle-021",
+        "question": "Какова сложность основных операций dict?",
+        "answer": "Получение, вставка и удаление по ключу имеют ожидаемую сложность O(1), но теоретически в худшем случае возможна O(n) при неблагоприятных коллизиях и иных условиях. Операции зависят от корректного __hash__ и __eq__.",
+        "question_audio": "audio/py-middle-021_question.mp3"
+      },
+      {
+        "id": "py-middle-112~py-middle-020",
+        "card_id": "py-middle-020",
+        "question": "Чем set отличается от list?",
+        "answer": "set хранит уникальные хешируемые элементы. Проверка принадлежности в среднем O(1), а у list O(n). Порядок элементов set не считается API-гарантией; для упорядоченного уникального набора можно использовать dict.fromkeys(...).",
+        "question_audio": "audio/py-middle-020_question.mp3"
+      }
+    ],
+    "py-middle-113": [
+      {
+        "id": "py-middle-113~py-middle-022",
+        "card_id": "py-middle-022",
+        "question": "Что выбрать для очереди: list или deque?",
+        "answer": "Для добавления и удаления с обоих концов лучше collections.deque: append и popleft обычно O(1). list.pop(0) сдвигает элементы и работает за O(n). Если нужна потокобезопасная очередь между потоками, используйте queue.Queue.",
+        "question_audio": "audio/py-middle-022_question.mp3"
+      },
+      {
+        "id": "py-middle-113~py-middle-019",
+        "card_id": "py-middle-019",
+        "question": "list против tuple: когда что выбирать?",
+        "answer": "list подходит для изменяемой последовательности, tuple — для фиксированной записи или неизменяемой структуры. Кортеж не делает неизменяемыми вложенные объекты. В обоих случаях доступ по индексу O(1), а вставка в начало обычно O(n).",
+        "question_audio": "audio/py-middle-019_question.mp3"
+      }
+    ],
+    "py-middle-114": [
+      {
+        "id": "py-middle-114~py-middle-023",
+        "card_id": "py-middle-023",
+        "question": "Чем iterable отличается от iterator?",
+        "answer": "Iterable поддерживает получение итератора через iter(obj); iterator хранит состояние обхода и имеет __next__, возвращая элементы до StopIteration. Один iterable может создавать независимые итераторы, а сам iterator обычно одноразовый.",
+        "question_audio": "audio/py-middle-023_question.mp3"
+      },
+      {
+        "id": "py-middle-114~py-middle-024",
+        "card_id": "py-middle-024",
+        "question": "Что такое генератор и зачем yield?",
+        "answer": "Генератор вычисляет значения лениво и сохраняет состояние между next(). Он полезен для потоковых данных и больших последовательностей, но обычно исчерпывается после обхода. yield from делегирует выдачу значений другому итерируемому объекту.",
+        "question_audio": "audio/py-middle-024_question.mp3"
+      }
+    ],
+    "py-middle-115": [
+      {
+        "id": "py-middle-115~py-middle-067",
+        "card_id": "py-middle-067",
+        "question": "Что такое идемпотентность операций?",
+        "answer": "Повторное выполнение не меняет итоговый результат сверх первого успешного применения. Для оплаты или создания заказов используют idempotency key и уникальное ограничение в БД, а не только проверку на уровне Python. Retry без идемпотентности может создавать дубликаты.",
+        "question_audio": "audio/py-middle-067_question.mp3"
+      },
+      {
+        "id": "py-middle-115~py-middle-055",
+        "card_id": "py-middle-055",
+        "question": "Как не потерять задачу после записи в БД?",
+        "answer": "Если поставить задачу в очередь до commit, worker может прочитать ещё незафиксированные данные. В Django используйте transaction.on_commit(...) для публикации после commit. Для более сильных гарантий между БД и брокером применяют transactional outbox.",
+        "question_audio": "audio/py-middle-055_question.mp3"
+      }
+    ],
+    "django-001": [
+      {
+        "id": "django-001~django-005",
+        "card_id": "django-005",
+        "question": "Как Q-объекты помогают строить фильтры?",
+        "answer": "Q описывает условие, которое можно соединять через И, ИЛИ и отрицание. Это удобно для составных фильтров; значения по-прежнему передаются ORM параметрами.",
+        "question_audio": "audio/django-005_question.mp3"
+      },
+      {
+        "id": "django-001~django-006",
+        "card_id": "django-006",
+        "question": "Зачем использовать exists и count вместо загрузки QuerySet?",
+        "answer": "exists проверяет наличие, count считает строки средствами БД. Они выгодны, если сами объекты не нужны. Если всё равно будете сразу обходить уже полученный QuerySet, отдельная проверка может создать лишний запрос.",
+        "question_audio": "audio/django-006_question.mp3"
+      }
+    ],
+    "django-002": [
+      {
+        "id": "django-002~django-006",
+        "card_id": "django-006",
+        "question": "Зачем использовать exists и count вместо загрузки QuerySet?",
+        "answer": "exists проверяет наличие, count считает строки средствами БД. Они выгодны, если сами объекты не нужны. Если всё равно будете сразу обходить уже полученный QuerySet, отдельная проверка может создать лишний запрос.",
+        "question_audio": "audio/django-006_question.mp3"
+      },
+      {
+        "id": "django-002~django-007",
+        "card_id": "django-007",
+        "question": "Чем опасны сигналы Django для бизнес-логики?",
+        "answer": "Сигналы создают неявные связи и усложняют порядок выполнения, тестирование и транзакции. Явный сервис обычно лучше выражает важный бизнес-сценарий. Сигналы полезны для независимых реакций, если их ограничения понятны.",
+        "question_audio": "audio/django-007_question.mp3"
+      }
+    ],
+    "django-003": [
+      {
+        "id": "django-003~django-007",
+        "card_id": "django-007",
+        "question": "Чем опасны сигналы Django для бизнес-логики?",
+        "answer": "Сигналы создают неявные связи и усложняют порядок выполнения, тестирование и транзакции. Явный сервис обычно лучше выражает важный бизнес-сценарий. Сигналы полезны для независимых реакций, если их ограничения понятны.",
+        "question_audio": "audio/django-007_question.mp3"
+      },
+      {
+        "id": "django-003~django-008",
+        "card_id": "django-008",
+        "question": "Когда использовать on_commit?",
+        "answer": "Для действия, которое должно начаться только после успешного коммита транзакции. Callback не сработает при откате. Он не гарантирует доставку сообщения при падении процесса после коммита; для этого нужен outbox.",
+        "question_audio": "audio/django-008_question.mp3"
+      }
+    ],
+    "django-004": [
+      {
+        "id": "django-004~django-008",
+        "card_id": "django-008",
+        "question": "Когда использовать on_commit?",
+        "answer": "Для действия, которое должно начаться только после успешного коммита транзакции. Callback не сработает при откате. Он не гарантирует доставку сообщения при падении процесса после коммита; для этого нужен outbox.",
+        "question_audio": "audio/django-008_question.mp3"
+      },
+      {
+        "id": "django-004~django-009",
+        "card_id": "django-009",
+        "question": "Как безопасно добавить обязательное поле в большую таблицу?",
+        "answer": "Обычно применяют несколько этапов: добавить допускающее NULL поле, выпустить совместимый код, заполнить данные батчами, проверить их и затем ввести ограничение. Конкретный SQL и блокировки оценивают для используемой БД.",
+        "question_audio": "audio/django-009_question.mp3"
+      }
+    ],
+    "django-005": [
+      {
+        "id": "django-005~django-009",
+        "card_id": "django-009",
+        "question": "Как безопасно добавить обязательное поле в большую таблицу?",
+        "answer": "Обычно применяют несколько этапов: добавить допускающее NULL поле, выпустить совместимый код, заполнить данные батчами, проверить их и затем ввести ограничение. Конкретный SQL и блокировки оценивают для используемой БД.",
+        "question_audio": "audio/django-009_question.mp3"
+      },
+      {
+        "id": "django-005~django-010",
+        "card_id": "django-010",
+        "question": "Как тестировать количество запросов Django?",
+        "answer": "Используйте assertNumQueries или инструменты захвата SQL в тесте репрезентативного сценария. Важно проверять не только скорость, но и независимость числа запросов от числа объектов.",
+        "question_audio": "audio/django-010_question.mp3"
+      }
+    ],
+    "django-006": [
+      {
+        "id": "django-006~django-010",
+        "card_id": "django-010",
+        "question": "Как тестировать количество запросов Django?",
+        "answer": "Используйте assertNumQueries или инструменты захвата SQL в тесте репрезентативного сценария. Важно проверять не только скорость, но и независимость числа запросов от числа объектов.",
+        "question_audio": "audio/django-010_question.mp3"
+      },
+      {
+        "id": "django-006~django-011",
+        "card_id": "django-011",
+        "question": "Что такое кастомный Manager и QuerySet?",
+        "answer": "QuerySet хранит переиспользуемые цепочечные фильтры и операции выборки. Manager предоставляет вход к запросам модели. Не прячьте в них неожиданные внешние эффекты и учитывайте использование default manager другими механизмами Django.",
+        "question_audio": "audio/django-011_question.mp3"
+      }
+    ],
+    "django-007": [
+      {
+        "id": "django-007~django-011",
+        "card_id": "django-011",
+        "question": "Что такое кастомный Manager и QuerySet?",
+        "answer": "QuerySet хранит переиспользуемые цепочечные фильтры и операции выборки. Manager предоставляет вход к запросам модели. Не прячьте в них неожиданные внешние эффекты и учитывайте использование default manager другими механизмами Django.",
+        "question_audio": "audio/django-011_question.mp3"
+      },
+      {
+        "id": "django-007~django-012",
+        "card_id": "django-012",
+        "question": "Какие ограничения есть у async ORM Django?",
+        "answer": "У ORM есть асинхронные методы, но не вся синхронная логика становится безопасной в event loop. Транзакционные блоки в рассматриваемой Django 5.2 следует оформлять в синхронной функции и вызывать через sync_to_async.",
+        "question_audio": "audio/django-012_question.mp3"
+      }
+    ],
+    "django-008": [
+      {
+        "id": "django-008~django-012",
+        "card_id": "django-012",
+        "question": "Какие ограничения есть у async ORM Django?",
+        "answer": "У ORM есть асинхронные методы, но не вся синхронная логика становится безопасной в event loop. Транзакционные блоки в рассматриваемой Django 5.2 следует оформлять в синхронной функции и вызывать через sync_to_async.",
+        "question_audio": "audio/django-012_question.mp3"
+      },
+      {
+        "id": "django-008~django-013",
+        "card_id": "django-013",
+        "question": "Как безопасно отдавать пользовательские файлы?",
+        "answer": "Проверять размер, разрешённые типы и права доступа, не доверять имени и Content-Type, хранить файл под безопасным именем. Для недоверенного активного содержимого полезен отдельный домен и безопасные заголовки.",
+        "question_audio": "audio/django-013_question.mp3"
+      }
+    ],
+    "django-009": [
+      {
+        "id": "django-009~django-013",
+        "card_id": "django-013",
+        "question": "Как безопасно отдавать пользовательские файлы?",
+        "answer": "Проверять размер, разрешённые типы и права доступа, не доверять имени и Content-Type, хранить файл под безопасным именем. Для недоверенного активного содержимого полезен отдельный домен и безопасные заголовки.",
+        "question_audio": "audio/django-013_question.mp3"
+      },
+      {
+        "id": "django-009~django-014",
+        "card_id": "django-014",
+        "question": "Зачем нужны ограничения БД, если есть валидация Django?",
+        "answer": "Проверки приложения удобны для сообщения пользователю, но параллельные запросы и другие клиенты могут их обойти. UNIQUE, CHECK и FOREIGN KEY защищают целостность в самой БД.",
+        "question_audio": "audio/django-014_question.mp3"
+      }
+    ],
+    "django-010": [
+      {
+        "id": "django-010~django-014",
+        "card_id": "django-014",
+        "question": "Зачем нужны ограничения БД, если есть валидация Django?",
+        "answer": "Проверки приложения удобны для сообщения пользователю, но параллельные запросы и другие клиенты могут их обойти. UNIQUE, CHECK и FOREIGN KEY защищают целостность в самой БД.",
+        "question_audio": "audio/django-014_question.mp3"
+      },
+      {
+        "id": "django-010~django-015",
+        "card_id": "django-015",
+        "question": "Как выбрать границу транзакции в сервисе Django?",
+        "answer": "Объединить в атомарный блок только согласованные операции БД и защитить конкурентное чтение, когда оно необходимо. Долгие внешние вызовы не стоит держать под блокировками; для связи с ними используют устойчивый процесс и компенсации.",
+        "question_audio": "audio/django-015_question.mp3"
+      }
+    ],
+    "django-011": [
+      {
+        "id": "django-011~django-015",
+        "card_id": "django-015",
+        "question": "Как выбрать границу транзакции в сервисе Django?",
+        "answer": "Объединить в атомарный блок только согласованные операции БД и защитить конкурентное чтение, когда оно необходимо. Долгие внешние вызовы не стоит держать под блокировками; для связи с ними используют устойчивый процесс и компенсации.",
+        "question_audio": "audio/django-015_question.mp3"
+      },
+      {
+        "id": "django-011~django-001",
+        "card_id": "django-001",
+        "question": "Как обновлять счётчик в Django без потери изменений?",
+        "answer": "Используйте F-выражение в UPDATE, чтобы вычисление выполнялось в БД. Если операция включает несколько зависимых шагов, нужна транзакция и подходящий контроль конкурентности.",
+        "question_audio": "audio/django-001_question.mp3"
+      }
+    ],
+    "django-012": [
+      {
+        "id": "django-012~django-001",
+        "card_id": "django-001",
+        "question": "Как обновлять счётчик в Django без потери изменений?",
+        "answer": "Используйте F-выражение в UPDATE, чтобы вычисление выполнялось в БД. Если операция включает несколько зависимых шагов, нужна транзакция и подходящий контроль конкурентности.",
+        "question_audio": "audio/django-001_question.mp3"
+      },
+      {
+        "id": "django-012~django-002",
+        "card_id": "django-002",
+        "question": "Для чего нужен select_for_update?",
+        "answer": "Он блокирует выбранные строки до окончания транзакции на поддерживаемой СУБД. В Django используйте его внутри atomic и учитывайте порядок захвата, тайм-ауты и поддержку конкретной БД.",
+        "question_audio": "audio/django-002_question.mp3"
+      }
+    ],
+    "django-013": [
+      {
+        "id": "django-013~django-002",
+        "card_id": "django-002",
+        "question": "Для чего нужен select_for_update?",
+        "answer": "Он блокирует выбранные строки до окончания транзакции на поддерживаемой СУБД. В Django используйте его внутри atomic и учитывайте порядок захвата, тайм-ауты и поддержку конкретной БД.",
+        "question_audio": "audio/django-002_question.mp3"
+      },
+      {
+        "id": "django-013~django-003",
+        "card_id": "django-003",
+        "question": "Когда применять bulk_create и bulk_update?",
+        "answer": "Когда нужно пакетно записать много объектов с меньшим числом запросов. Они имеют ограничения: обычные save и сигналы сохранения не вызываются, поведение ключей и конфликтов зависит от БД и версии.",
+        "question_audio": "audio/django-003_question.mp3"
+      }
+    ],
+    "django-014": [
+      {
+        "id": "django-014~django-003",
+        "card_id": "django-003",
+        "question": "Когда применять bulk_create и bulk_update?",
+        "answer": "Когда нужно пакетно записать много объектов с меньшим числом запросов. Они имеют ограничения: обычные save и сигналы сохранения не вызываются, поведение ключей и конфликтов зависит от БД и версии.",
+        "question_audio": "audio/django-003_question.mp3"
+      },
+      {
+        "id": "django-014~django-004",
+        "card_id": "django-004",
+        "question": "Чем annotate отличается от aggregate?",
+        "answer": "annotate добавляет вычисляемые поля к объектам QuerySet, например количество заказов для каждого пользователя. aggregate вычисляет итоговые значения и возвращает словарь, а не QuerySet.",
+        "question_audio": "audio/django-004_question.mp3"
+      }
+    ],
+    "django-015": [
+      {
+        "id": "django-015~django-004",
+        "card_id": "django-004",
+        "question": "Чем annotate отличается от aggregate?",
+        "answer": "annotate добавляет вычисляемые поля к объектам QuerySet, например количество заказов для каждого пользователя. aggregate вычисляет итоговые значения и возвращает словарь, а не QuerySet.",
+        "question_audio": "audio/django-004_question.mp3"
+      },
+      {
+        "id": "django-015~django-005",
+        "card_id": "django-005",
+        "question": "Как Q-объекты помогают строить фильтры?",
+        "answer": "Q описывает условие, которое можно соединять через И, ИЛИ и отрицание. Это удобно для составных фильтров; значения по-прежнему передаются ORM параметрами.",
+        "question_audio": "audio/django-005_question.mp3"
+      }
+    ],
+    "fastapi-001": [
+      {
+        "id": "fastapi-001~fastapi-003",
+        "card_id": "fastapi-003",
+        "question": "Как использовать yield-зависимость для сессии БД?",
+        "answer": "Зависимость создаёт сессию и освобождает её в блоке finally или контекстном менеджере. Границы commit и rollback должны быть явно выбраны. Время cleanup зависит от scope зависимости и версии FastAPI.",
+        "question_audio": "audio/fastapi-003_question.mp3"
+      },
+      {
+        "id": "fastapi-001~fastapi-006",
+        "card_id": "fastapi-006",
+        "question": "Что такое lifespan приложения?",
+        "answer": "Это контекст инициализации и завершения приложения. В нём открывают общие ресурсы, например пул, и закрывают их при shutdown. Каждый worker-процесс имеет свой экземпляр ресурсов.",
+        "question_audio": "audio/fastapi-006_question.mp3"
+      }
+    ],
+    "fastapi-002": [
+      {
+        "id": "fastapi-002~fastapi-007",
+        "card_id": "fastapi-007",
+        "question": "Чем BackgroundTasks отличается от очереди задач?",
+        "answer": "BackgroundTasks выполняет работу в процессе приложения после отправки ответа. Это удобно для коротких некритичных действий, но не даёт надёжной доставки, независимых worker и устойчивых повторов, как отдельная очередь.",
+        "question_audio": "audio/fastapi-007_question.mp3"
+      },
+      {
+        "id": "fastapi-002~fastapi-008",
+        "card_id": "fastapi-008",
+        "question": "Как подменить зависимости FastAPI в тесте?",
+        "answer": "Через app.dependency_overrides передать тестовую реализацию зависимости. После теста обязательно очистить подмену, чтобы не загрязнять следующие сценарии.",
+        "question_audio": "audio/fastapi-008_question.mp3"
+      }
+    ],
+    "fastapi-003": [
+      {
+        "id": "fastapi-003~fastapi-006",
+        "card_id": "fastapi-006",
+        "question": "Что такое lifespan приложения?",
+        "answer": "Это контекст инициализации и завершения приложения. В нём открывают общие ресурсы, например пул, и закрывают их при shutdown. Каждый worker-процесс имеет свой экземпляр ресурсов.",
+        "question_audio": "audio/fastapi-006_question.mp3"
+      },
+      {
+        "id": "fastapi-003~fastapi-015",
+        "card_id": "fastapi-015",
+        "question": "Как организовать Alembic вместе с async SQLAlchemy?",
+        "answer": "Миграции запускаются отдельной командой и используют согласованные metadata и настройки подключения. Можно применять async-шаблон Alembic с адаптацией sync-операций. Не запускайте миграцию одновременно в каждом worker при старте API.",
+        "question_audio": "audio/fastapi-015_question.mp3"
+      }
+    ],
+    "fastapi-004": [
+      {
+        "id": "fastapi-004~fastapi-009",
+        "card_id": "fastapi-009",
+        "question": "Когда выбрасывать HTTPException?",
+        "answer": "На HTTP-границе для ожидаемой ошибки клиента или доступа. Доменные ошибки сервиса удобнее преобразовать централизованным обработчиком. Не отдавайте внутренний traceback и детали инфраструктуры клиенту.",
+        "question_audio": "audio/fastapi-009_question.mp3"
+      },
+      {
+        "id": "fastapi-004~fastapi-010",
+        "card_id": "fastapi-010",
+        "question": "Как организовать аутентификацию и проверку владельца?",
+        "answer": "Зависимость может получить текущего пользователя, но доступ к конкретному объекту всё равно проверяется в серверной логике для каждого запроса. Наличие валидного токена не даёт права читать любые id.",
+        "question_audio": "audio/fastapi-010_question.mp3"
+      }
+    ],
+    "fastapi-005": [
+      {
+        "id": "fastapi-005~fastapi-010",
+        "card_id": "fastapi-010",
+        "question": "Как организовать аутентификацию и проверку владельца?",
+        "answer": "Зависимость может получить текущего пользователя, но доступ к конкретному объекту всё равно проверяется в серверной логике для каждого запроса. Наличие валидного токена не даёт права читать любые id.",
+        "question_audio": "audio/fastapi-010_question.mp3"
+      },
+      {
+        "id": "fastapi-005~fastapi-011",
+        "card_id": "fastapi-011",
+        "question": "Что учитывать при StreamingResponse?",
+        "answer": "Генератор отдаёт части результата, а не весь файл сразу. Нужно обеспечить время жизни ресурсов, обработать отключение клиента и понимать, что после отправки заголовков обычный HTTP-статус ошибки уже не изменить.",
+        "question_audio": "audio/fastapi-011_question.mp3"
+      }
+    ],
+    "fastapi-006": [
+      {
+        "id": "fastapi-006~fastapi-015",
+        "card_id": "fastapi-015",
+        "question": "Как организовать Alembic вместе с async SQLAlchemy?",
+        "answer": "Миграции запускаются отдельной командой и используют согласованные metadata и настройки подключения. Можно применять async-шаблон Alembic с адаптацией sync-операций. Не запускайте миграцию одновременно в каждом worker при старте API.",
+        "question_audio": "audio/fastapi-015_question.mp3"
+      },
+      {
+        "id": "fastapi-006~alembic-002",
+        "card_id": "alembic-002",
+        "question": "Что нужно настроить для autogenerate?",
+        "answer": "В env.py передать target_metadata и импортировать модели так, чтобы таблицы присутствовали в metadata. Проверить выбранную БД, схемы и настройки сравнения. Пустые metadata могут привести к опасным предложениям удаления.",
+        "question_audio": "audio/alembic-002_question.mp3"
+      }
+    ],
+    "fastapi-007": [
+      {
+        "id": "fastapi-007~fastapi-012",
+        "card_id": "fastapi-012",
+        "question": "Как ограничивать конкурентные внешние запросы?",
+        "answer": "Использовать переиспользуемый клиент с тайм-аутами и лимитами соединений, при необходимости semaphore и ограниченную очередь. Общий бюджет запросов оценивается с учётом числа worker.",
+        "question_audio": "audio/fastapi-012_question.mp3"
+      },
+      {
+        "id": "fastapi-007~fastapi-013",
+        "card_id": "fastapi-013",
+        "question": "Как влияет число worker на состояние приложения?",
+        "answer": "Worker — отдельный процесс со своей памятью, кэшем, пулом и задачами lifespan. Общие данные и глобальные блокировки нужно выносить в подходящее внешнее хранилище.",
+        "question_audio": "audio/fastapi-013_question.mp3"
+      }
+    ],
+    "fastapi-008": [
+      {
+        "id": "fastapi-008~fastapi-013",
+        "card_id": "fastapi-013",
+        "question": "Как влияет число worker на состояние приложения?",
+        "answer": "Worker — отдельный процесс со своей памятью, кэшем, пулом и задачами lifespan. Общие данные и глобальные блокировки нужно выносить в подходящее внешнее хранилище.",
+        "question_audio": "audio/fastapi-013_question.mp3"
+      },
+      {
+        "id": "fastapi-008~fastapi-014",
+        "card_id": "fastapi-014",
+        "question": "Чем Annotated полезен для Depends и параметров?",
+        "answer": "Annotated позволяет связать базовый тип с метаданными валидации или зависимости, не теряя понятную аннотацию. Повторяющиеся зависимости можно оформить алиасом типа.",
+        "question_audio": "audio/fastapi-014_question.mp3"
+      }
+    ],
+    "fastapi-009": [
+      {
+        "id": "fastapi-009~fastapi-014",
+        "card_id": "fastapi-014",
+        "question": "Чем Annotated полезен для Depends и параметров?",
+        "answer": "Annotated позволяет связать базовый тип с метаданными валидации или зависимости, не теряя понятную аннотацию. Повторяющиеся зависимости можно оформить алиасом типа.",
+        "question_audio": "audio/fastapi-014_question.mp3"
+      },
+      {
+        "id": "fastapi-009~fastapi-015",
+        "card_id": "fastapi-015",
+        "question": "Как организовать Alembic вместе с async SQLAlchemy?",
+        "answer": "Миграции запускаются отдельной командой и используют согласованные metadata и настройки подключения. Можно применять async-шаблон Alembic с адаптацией sync-операций. Не запускайте миграцию одновременно в каждом worker при старте API.",
+        "question_audio": "audio/fastapi-015_question.mp3"
+      }
+    ],
+    "fastapi-010": [
+      {
+        "id": "fastapi-010~fastapi-015",
+        "card_id": "fastapi-015",
+        "question": "Как организовать Alembic вместе с async SQLAlchemy?",
+        "answer": "Миграции запускаются отдельной командой и используют согласованные metadata и настройки подключения. Можно применять async-шаблон Alembic с адаптацией sync-операций. Не запускайте миграцию одновременно в каждом worker при старте API.",
+        "question_audio": "audio/fastapi-015_question.mp3"
+      },
+      {
+        "id": "fastapi-010~fastapi-001",
+        "card_id": "fastapi-001",
+        "question": "Как выбрать def или async def для endpoint FastAPI?",
+        "answer": "Если вызываете awaitable I/O, используйте async def и await. Синхронный endpoint FastAPI запускает в threadpool. Обычная блокирующая функция, напрямую вызванная из async def, сама в пул не переносится.",
+        "question_audio": "audio/fastapi-001_question.mp3"
+      }
+    ],
+    "fastapi-011": [
+      {
+        "id": "fastapi-011~fastapi-001",
+        "card_id": "fastapi-001",
+        "question": "Как выбрать def или async def для endpoint FastAPI?",
+        "answer": "Если вызываете awaitable I/O, используйте async def и await. Синхронный endpoint FastAPI запускает в threadpool. Обычная блокирующая функция, напрямую вызванная из async def, сама в пул не переносится.",
+        "question_audio": "audio/fastapi-001_question.mp3"
+      },
+      {
+        "id": "fastapi-011~fastapi-002",
+        "card_id": "fastapi-002",
+        "question": "Что даёт response_model?",
+        "answer": "Он задаёт схему ответа для документации, сериализации, фильтрации и проверки возвращаемых данных. Это помогает не выдавать внутренние поля, но не заменяет проверку прав и внимательный дизайн выходной схемы.",
+        "question_audio": "audio/fastapi-002_question.mp3"
+      }
+    ],
+    "fastapi-012": [
+      {
+        "id": "fastapi-012~fastapi-002",
+        "card_id": "fastapi-002",
+        "question": "Что даёт response_model?",
+        "answer": "Он задаёт схему ответа для документации, сериализации, фильтрации и проверки возвращаемых данных. Это помогает не выдавать внутренние поля, но не заменяет проверку прав и внимательный дизайн выходной схемы.",
+        "question_audio": "audio/fastapi-002_question.mp3"
+      },
+      {
+        "id": "fastapi-012~fastapi-003",
+        "card_id": "fastapi-003",
+        "question": "Как использовать yield-зависимость для сессии БД?",
+        "answer": "Зависимость создаёт сессию и освобождает её в блоке finally или контекстном менеджере. Границы commit и rollback должны быть явно выбраны. Время cleanup зависит от scope зависимости и версии FastAPI.",
+        "question_audio": "audio/fastapi-003_question.mp3"
+      }
+    ],
+    "fastapi-013": [
+      {
+        "id": "fastapi-013~fastapi-003",
+        "card_id": "fastapi-003",
+        "question": "Как использовать yield-зависимость для сессии БД?",
+        "answer": "Зависимость создаёт сессию и освобождает её в блоке finally или контекстном менеджере. Границы commit и rollback должны быть явно выбраны. Время cleanup зависит от scope зависимости и версии FastAPI.",
+        "question_audio": "audio/fastapi-003_question.mp3"
+      },
+      {
+        "id": "fastapi-013~fastapi-004",
+        "card_id": "fastapi-004",
+        "question": "Чем Pydantic model_validate отличается от model_dump?",
+        "answer": "В Pydantic 2 model_validate создаёт и валидирует модель из входных данных. model_dump превращает модель в словарь с выбранными настройками. Для JSON-совместимых значений используют подходящий mode.",
+        "question_audio": "audio/fastapi-004_question.mp3"
+      }
+    ],
+    "fastapi-014": [
+      {
+        "id": "fastapi-014~fastapi-004",
+        "card_id": "fastapi-004",
+        "question": "Чем Pydantic model_validate отличается от model_dump?",
+        "answer": "В Pydantic 2 model_validate создаёт и валидирует модель из входных данных. model_dump превращает модель в словарь с выбранными настройками. Для JSON-совместимых значений используют подходящий mode.",
+        "question_audio": "audio/fastapi-004_question.mp3"
+      },
+      {
+        "id": "fastapi-014~fastapi-005",
+        "card_id": "fastapi-005",
+        "question": "Как проверить обязательный положительный параметр?",
+        "answer": "Описать ограничение в типизированной схеме или через Field и Query. Не все бизнес-правила относятся к форме входа: остаток товара и права проверяются отдельно.",
+        "question_audio": "audio/fastapi-005_question.mp3"
+      }
+    ],
+    "fastapi-015": [
+      {
+        "id": "fastapi-015~alembic-002",
+        "card_id": "alembic-002",
+        "question": "Что нужно настроить для autogenerate?",
+        "answer": "В env.py передать target_metadata и импортировать модели так, чтобы таблицы присутствовали в metadata. Проверить выбранную БД, схемы и настройки сравнения. Пустые metadata могут привести к опасным предложениям удаления.",
+        "question_audio": "audio/alembic-002_question.mp3"
+      },
+      {
+        "id": "fastapi-015~alembic-003",
+        "card_id": "alembic-003",
+        "question": "Почему autogenerate нужно проверять вручную?",
+        "answer": "Он обнаруживает не все изменения и не понимает бизнес-смысл. Переименование может выглядеть как удаление и добавление, данные и многие операции требуют ручного кода. Черновик нужно проверить и протестировать.",
+        "question_audio": "audio/alembic-003_question.mp3"
+      }
+    ],
+    "alembic-001": [
+      {
+        "id": "alembic-001~alembic-003",
+        "card_id": "alembic-003",
+        "question": "Почему autogenerate нужно проверять вручную?",
+        "answer": "Он обнаруживает не все изменения и не понимает бизнес-смысл. Переименование может выглядеть как удаление и добавление, данные и многие операции требуют ручного кода. Черновик нужно проверить и протестировать.",
+        "question_audio": "audio/alembic-003_question.mp3"
+      },
+      {
+        "id": "alembic-001~alembic-004",
+        "card_id": "alembic-004",
+        "question": "Что означают upgrade и downgrade внутри файла?",
+        "answer": "upgrade описывает движение к новой схеме, downgrade — обратное. Не каждое изменение данных обратимо; возможность технического downgrade не гарантирует безопасный откат приложения.",
+        "question_audio": "audio/alembic-004_question.mp3"
+      }
+    ],
+    "alembic-002": [
+      {
+        "id": "alembic-002~alembic-003",
+        "card_id": "alembic-003",
+        "question": "Почему autogenerate нужно проверять вручную?",
+        "answer": "Он обнаруживает не все изменения и не понимает бизнес-смысл. Переименование может выглядеть как удаление и добавление, данные и многие операции требуют ручного кода. Черновик нужно проверить и протестировать.",
+        "question_audio": "audio/alembic-003_question.mp3"
+      },
+      {
+        "id": "alembic-002~alembic-010",
+        "card_id": "alembic-010",
+        "question": "Как согласовать миграции и rolling deploy?",
+        "answer": "Применять expand-and-contract: сначала совместимое расширение схемы, затем новый код и перенос данных, затем удаление старого после ухода прежних версий. Миграции запускать контролируемо одним процессом.",
+        "question_audio": "audio/alembic-010_question.mp3"
+      }
+    ],
+    "alembic-003": [
+      {
+        "id": "alembic-003~alembic-010",
+        "card_id": "alembic-010",
+        "question": "Как согласовать миграции и rolling deploy?",
+        "answer": "Применять expand-and-contract: сначала совместимое расширение схемы, затем новый код и перенос данных, затем удаление старого после ухода прежних версий. Миграции запускать контролируемо одним процессом.",
+        "question_audio": "audio/alembic-010_question.mp3"
+      },
+      {
+        "id": "alembic-003~fastapi-001",
+        "card_id": "fastapi-001",
+        "question": "Как выбрать def или async def для endpoint FastAPI?",
+        "answer": "Если вызываете awaitable I/O, используйте async def и await. Синхронный endpoint FastAPI запускает в threadpool. Обычная блокирующая функция, напрямую вызванная из async def, сама в пул не переносится.",
+        "question_audio": "audio/fastapi-001_question.mp3"
+      }
+    ],
+    "alembic-004": [
+      {
+        "id": "alembic-004~alembic-006",
+        "card_id": "alembic-006",
+        "question": "Когда использовать stamp?",
+        "answer": "stamp записывает указанную ревизию в таблицу версий без выполнения операций миграции. Он подходит только когда соответствие фактической схемы этой ревизии проверено, например после управляемого создания базы.",
+        "question_audio": "audio/alembic-006_question.mp3"
+      },
+      {
+        "id": "alembic-004~alembic-007",
+        "card_id": "alembic-007",
+        "question": "Как добавлять NOT NULL на большой таблице?",
+        "answer": "Разделить изменение структуры, обновление приложения, заполнение старых данных и введение ограничения. Проверить блокировки и особенности PostgreSQL; большой backfill обычно выполняют управляемыми батчами.",
+        "question_audio": "audio/alembic-007_question.mp3"
+      }
+    ],
+    "alembic-005": [
+      {
+        "id": "alembic-005~alembic-007",
+        "card_id": "alembic-007",
+        "question": "Как добавлять NOT NULL на большой таблице?",
+        "answer": "Разделить изменение структуры, обновление приложения, заполнение старых данных и введение ограничения. Проверить блокировки и особенности PostgreSQL; большой backfill обычно выполняют управляемыми батчами.",
+        "question_audio": "audio/alembic-007_question.mp3"
+      },
+      {
+        "id": "alembic-005~alembic-008",
+        "card_id": "alembic-008",
+        "question": "Что важно при создании индекса CONCURRENTLY?",
+        "answer": "В PostgreSQL это позволяет уменьшить блокировку записи, но такой CREATE INDEX нельзя выполнять внутри обычного транзакционного блока. Для Alembic нужен осознанный autocommit_block, обработка сбоев и проверка оставшихся невалидных индексов.",
+        "question_audio": "audio/alembic-008_question.mp3"
+      }
+    ],
+    "alembic-006": [
+      {
+        "id": "alembic-006~alembic-008",
+        "card_id": "alembic-008",
+        "question": "Что важно при создании индекса CONCURRENTLY?",
+        "answer": "В PostgreSQL это позволяет уменьшить блокировку записи, но такой CREATE INDEX нельзя выполнять внутри обычного транзакционного блока. Для Alembic нужен осознанный autocommit_block, обработка сбоев и проверка оставшихся невалидных индексов.",
+        "question_audio": "audio/alembic-008_question.mp3"
+      },
+      {
+        "id": "alembic-006~alembic-009",
+        "card_id": "alembic-009",
+        "question": "Как тестировать миграции?",
+        "answer": "Проверять применение на пустой базе и обновление с предыдущей поддерживаемой версии, ограничения и сохранность данных. Использовать ту же СУБД, что и production. Downgrade тестировать там, где он поддерживается контрактом.",
+        "question_audio": "audio/alembic-009_question.mp3"
+      }
+    ],
+    "alembic-007": [
+      {
+        "id": "alembic-007~alembic-009",
+        "card_id": "alembic-009",
+        "question": "Как тестировать миграции?",
+        "answer": "Проверять применение на пустой базе и обновление с предыдущей поддерживаемой версии, ограничения и сохранность данных. Использовать ту же СУБД, что и production. Downgrade тестировать там, где он поддерживается контрактом.",
+        "question_audio": "audio/alembic-009_question.mp3"
+      },
+      {
+        "id": "alembic-007~alembic-010",
+        "card_id": "alembic-010",
+        "question": "Как согласовать миграции и rolling deploy?",
+        "answer": "Применять expand-and-contract: сначала совместимое расширение схемы, затем новый код и перенос данных, затем удаление старого после ухода прежних версий. Миграции запускать контролируемо одним процессом.",
+        "question_audio": "audio/alembic-010_question.mp3"
+      }
+    ],
+    "alembic-008": [
+      {
+        "id": "alembic-008~alembic-010",
+        "card_id": "alembic-010",
+        "question": "Как согласовать миграции и rolling deploy?",
+        "answer": "Применять expand-and-contract: сначала совместимое расширение схемы, затем новый код и перенос данных, затем удаление старого после ухода прежних версий. Миграции запускать контролируемо одним процессом.",
+        "question_audio": "audio/alembic-010_question.mp3"
+      },
+      {
+        "id": "alembic-008~alembic-001",
+        "card_id": "alembic-001",
+        "question": "Чем revision отличается от upgrade?",
+        "answer": "revision создаёт файл миграции, а upgrade применяет существующие миграции до целевой версии. Опция autogenerate помогает подготовить черновик на основе сравнения схемы и metadata, но не заменяет ревью.",
+        "question_audio": "audio/alembic-001_question.mp3"
+      }
+    ],
+    "alembic-009": [
+      {
+        "id": "alembic-009~alembic-001",
+        "card_id": "alembic-001",
+        "question": "Чем revision отличается от upgrade?",
+        "answer": "revision создаёт файл миграции, а upgrade применяет существующие миграции до целевой версии. Опция autogenerate помогает подготовить черновик на основе сравнения схемы и metadata, но не заменяет ревью.",
+        "question_audio": "audio/alembic-001_question.mp3"
+      },
+      {
+        "id": "alembic-009~alembic-002",
+        "card_id": "alembic-002",
+        "question": "Что нужно настроить для autogenerate?",
+        "answer": "В env.py передать target_metadata и импортировать модели так, чтобы таблицы присутствовали в metadata. Проверить выбранную БД, схемы и настройки сравнения. Пустые metadata могут привести к опасным предложениям удаления.",
+        "question_audio": "audio/alembic-002_question.mp3"
+      }
+    ],
+    "alembic-010": [
+      {
+        "id": "alembic-010~fastapi-001",
+        "card_id": "fastapi-001",
+        "question": "Как выбрать def или async def для endpoint FastAPI?",
+        "answer": "Если вызываете awaitable I/O, используйте async def и await. Синхронный endpoint FastAPI запускает в threadpool. Обычная блокирующая функция, напрямую вызванная из async def, сама в пул не переносится.",
+        "question_audio": "audio/fastapi-001_question.mp3"
+      },
+      {
+        "id": "alembic-010~fastapi-003",
+        "card_id": "fastapi-003",
+        "question": "Как использовать yield-зависимость для сессии БД?",
+        "answer": "Зависимость создаёт сессию и освобождает её в блоке finally или контекстном менеджере. Границы commit и rollback должны быть явно выбраны. Время cleanup зависит от scope зависимости и версии FastAPI.",
+        "question_audio": "audio/fastapi-003_question.mp3"
+      }
+    ]
+  }
+}

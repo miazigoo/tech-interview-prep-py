@@ -1,0 +1,5 @@
+Final verified stages (rerun after fixing UI automation timing / notification permission).
+PASS: detailed male-voice answer plays and restores paused at its position
+PASS: new comparison voice and exact-position transport control work
+PASS: changed-condition explanation voice restores with its revealed result
+PASS: background detailed audio survives process death and restores through MediaSession paused

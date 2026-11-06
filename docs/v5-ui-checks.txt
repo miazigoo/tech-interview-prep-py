@@ -1,0 +1,8 @@
+Final verified stages (rerun after fixing UI automation timing / notification permission).
+PASS: checklist saved
+PASS: learned opt-in changes only scheduled-review coverage
+PASS: paused audio position, card and queue survive force-stop
+PASS: unfinished finite session restores exact order and excludes closed-app time
+PASS: SQL draft and hint stage survive force-stop
+PASS: changed-condition prediction and revealed explanation restored
+PASS: comparison choice and explanation survive force-stop

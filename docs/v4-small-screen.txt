@@ -1,0 +1,1 @@
+PASS: 320dp width / 140% font; answer, scrollable player, phrase and status controls reachable

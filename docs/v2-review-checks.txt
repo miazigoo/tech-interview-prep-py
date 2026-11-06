@@ -1,0 +1,2 @@
+PASS: bad self-assessment in voluntary review preserves LEARNED
+PASS: only explicit confirmed return makes card NEW

@@ -1,0 +1,9 @@
+
+com.python.interviewcards.DeviceTest:.....
+com.python.interviewcards.V2DeviceTest:.....
+
+Time: 29.517
+
+OK (10 tests)
+
+

@@ -1,0 +1,2 @@
+PASS: daily plan counts completed cards
+PASS: plan survives process restart

@@ -1,0 +1,5 @@
+PASS: reveal, difficulty, undo, learned exclusion
+PASS: process restart, learned review and restore
+PASS: saved x5, pause, background pause, cancelled navigation
+PASS: reset confirmation can be cancelled
+UI acceptance passed

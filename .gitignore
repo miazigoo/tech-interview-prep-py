@@ -1,0 +1,78 @@
+# ==========================================
+# Python Interview Preparation App (.gitignore)
+# ==========================================
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.local/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Releases, build archives & standalone zip/apk
+releases/
+*.apk
+*.aab
+*.zip
+*.tar.gz
+*.rar
+Python_Interview_Preparation.zip
+
+# Audio temporary files
+*.part
+*.part.mp3
+
+# Android / Gradle artifacts
+.gradle/
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/.cxx/
+android/app/.cxx/
+captures/
+.externalNativeBuild/
+*.hprof
+
+# IDEs & Editor configs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs & temp files
+*.log
+*.tmp
+*.bak
+
+# Environment variables & secrets
+.env
+.env.*
+*.jks
+*.keystore

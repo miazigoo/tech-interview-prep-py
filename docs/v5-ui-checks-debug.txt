@@ -1,0 +1,12 @@
+PASS: checklist saved
+PASS: learned opt-in changes only scheduled-review coverage
+Traceback (most recent call last):
+  File "/home/b00bs/my_less/lern_python/scripts/v5_ui_smoke.py", line 55, in <module>
+    time.sleep(.3);tap(next(t for t in texts() if t.startswith('Ⅱ')));time.sleep(1.2)
+                       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+PASS: paused audio position, card and queue survive force-stop
+PASS: unfinished finite session restores exact order and excludes closed-app time
+PASS: SQL draft and hint stage survive force-stop
+PASS: changed-condition prediction and revealed explanation restored
+PASS: comparison choice and explanation survive force-stop

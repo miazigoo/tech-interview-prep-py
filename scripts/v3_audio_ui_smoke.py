@@ -1,0 +1,21 @@
+from android_smoke import *
+assert SERIAL.startswith('emulator-')
+def reach(s):
+ for _ in range(18):
+  tree=nodes()
+  if any(n.get('text')==s for n in tree.iter('node')):return tap(s)
+  scroll=next(n for n in tree.iter('node') if n.get('class')=='android.widget.ScrollView')
+  x1,y1,x2,y2=map(int,re.findall(r'\d+',scroll.get('bounds')))
+  adb('shell','input','swipe',str((x1+x2)//2),str(y1+int((y2-y1)*.75)),str((x1+x2)//2),str(y1+int((y2-y1)*.35)),'500')
+ raise AssertionError(s)
+adb('shell','pm','clear-permission-flags','com.python.interviewcards','android.permission.RECORD_AUDIO','user-set','user-fixed')
+adb('shell','am','force-stop','com.python.interviewcards');adb('shell','am','start','-n','com.python.interviewcards/.MainActivity');time.sleep(.5)
+tap('Карточки');tap('Поиск по вопросам и ответам');adb('shell','input','text','==');adb('shell','input','keyevent','4');tap('В чём разница между == и is?')
+reach('Мой устный ответ');reach('● Записать свой ответ');time.sleep(.4)
+tree=nodes();deny=next(n for n in tree.iter('node') if n.get('resource-id','').endswith('permission_deny_button'))
+x1,y1,x2,y2=map(int,re.findall(r'\d+',deny.get('bounds')));adb('shell','input','tap',str((x1+x2)//2),str((y1+y2)//2));time.sleep(.4)
+assert any('Без микрофона' in t for t in texts());print('PASS: microphone request and denial remain usable',flush=True)
+reach('Показать ответ и пример');reach('▷  Озвучить объяснение');assert 'Объяснение' in texts();tap('Ⅱ  Пауза');assert any('Пауза · Объяснение' in t for t in texts())
+print('PASS: real explanation MP3 and pause',flush=True)
+reach('▷  Озвучить аналогию');assert 'Аналогия' in texts();shot('v3_audio');tap('Далее  ›');assert 'Готово к прослушиванию' in texts()
+print('PASS: real analogy MP3 and navigation cancellation',flush=True)

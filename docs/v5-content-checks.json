@@ -1,0 +1,12 @@
+{
+  "cards_with_checklists_and_two_answer_levels": 155,
+  "whatif": 24,
+  "executed_python_and_sql": 20,
+  "comparisons": 12,
+  "original_mp3_preserved": 515,
+  "new_detailed_compositions": 155,
+  "newly_synthesized_exercises": 36,
+  "packaged_mp3": 706,
+  "short_median_seconds": 20.2,
+  "detailed_median_seconds": 45.1
+}

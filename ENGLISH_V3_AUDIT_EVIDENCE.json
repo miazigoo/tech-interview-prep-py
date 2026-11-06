@@ -1,0 +1,340 @@
+{
+  "audit_date_client_timezone": "2026-11-03 Europe/Moscow",
+  "repository": "/home/b00bs/my_less/English",
+  "commit": "7d2e1e05e67928e71e4b63b4a924497d4e5f590e",
+  "baseline_spec_sha256": "cc537b18273707bb9f3312b54134b6ef0f59f2adcc62b202c7648c7709f51367",
+  "scope": {
+    "source_review": true,
+    "content_full_count": true,
+    "apk_inspection": true,
+    "device_ui_run": false,
+    "full_gradle_rebuild": false,
+    "complete_audio_listening": false,
+    "python_3_12_run": false
+  },
+  "content": {
+    "total_cards": 1680,
+    "all_ready": 1680,
+    "generic_primary_examples": 1524,
+    "generic_primary_percent": 90.71,
+    "answer_in_production_prompt": 1524,
+    "secondary_context_units": 22,
+    "lessons_source_count": 12,
+    "lessons_in_apk": 0,
+    "hasattr_list_fallback_examples": 120,
+    "python_namespace_examples": 169,
+    "python_compile_errors": 1
+  },
+  "audio": {
+    "manifest_rows": 1632,
+    "roles": {
+      "term_en": 26,
+      "meaning_ru": 24,
+      "example_en": 26,
+      "example_ru": 26,
+      "combined_legacy": 1530
+    },
+    "new_physical_mp3_files": 102,
+    "cards_with_any_new_role": 26,
+    "cards_with_all_four_standard_roles": 24,
+    "cards_missing_all_new_roles": 1654,
+    "cards_without_complete_new_audio_or_existing_legacy_fallback": 150,
+    "incomplete_pilot": [
+      "legacy.7.setattr",
+      "legacy.22.round"
+    ],
+    "current_file_hash_mismatches": 0,
+    "hash_check_does_not_prove_spoken_text_freshness": true
+  },
+  "checks": [
+    {
+      "name": "existing_python_tests",
+      "result": "pass",
+      "tests": 13,
+      "python": "3.13.5"
+    },
+    {
+      "name": "existing_content_validator",
+      "exit_code": 0,
+      "limitation": "does not reject reported semantic/compile defects"
+    },
+    {
+      "name": "actual_shipped_benchmark_python_snippets",
+      "result": "pass",
+      "examples": 5,
+      "python": "3.13.5"
+    },
+    {
+      "name": "recompiled_actual_kotlin_scheduler_tests",
+      "result": "pass",
+      "tests": 4,
+      "compiler": "2.0.21",
+      "runner": "JUnit 4.13.2",
+      "full_android_rebuild": false
+    },
+    {
+      "name": "build_check_immutable_editorial_sentinel",
+      "result": "failed",
+      "exit_code": 0,
+      "content_modified": true,
+      "sentinel_survived": false,
+      "isolated_tmp": true
+    },
+    {
+      "name": "missing_audio_validator",
+      "result": "failed",
+      "missing_files": 1,
+      "exit_code": 0,
+      "isolated_tmp": true
+    },
+    {
+      "name": "corrupt_audio_cache",
+      "result": "failed",
+      "bad_files_reused": 4,
+      "synthesis_calls": 0,
+      "returned_normally": true,
+      "network_called": false,
+      "isolated_tmp": true
+    },
+    {
+      "name": "provider_failure_preserves_manifest",
+      "result": "failed",
+      "synthesis_failures": 4,
+      "previous_manifest_rows": 1,
+      "published_manifest_rows": 0,
+      "returned_normally": true,
+      "network_called": false,
+      "isolated_tmp": true
+    },
+    {
+      "name": "Hard_scheduler_probe",
+      "result": "failed",
+      "initial_stability": 15.0,
+      "initial_difficulty": 5.0,
+      "initial_scheduled_days": 10,
+      "elapsed_days": 10,
+      "retention_cases": [
+        {
+          "retention": 0.8,
+          "actual_due_days": 12,
+          "interval_from_updated_stability": 66.89875731450677
+        },
+        {
+          "retention": 0.9,
+          "actual_due_days": 12,
+          "interval_from_updated_stability": 27.89742417504809
+        },
+        {
+          "retention": 0.97,
+          "actual_due_days": 12,
+          "interval_from_updated_stability": 7.4703256830455205
+        }
+      ],
+      "maximum_interval_case": {
+        "configured_days": 10,
+        "actual_due_days": 12
+      }
+    }
+  ],
+  "original_scenario_status_counts": {
+    "partial": 14,
+    "verified": 1,
+    "failed": 20,
+    "not_run": 1
+  },
+  "original_scenarios": [
+    {
+      "id": "A01",
+      "status": "partial",
+      "reason": "rsplit data corrected; mnemonic absent from automatic introduction audio"
+    },
+    {
+      "id": "A02",
+      "status": "partial",
+      "reason": "zip data corrected; full explanation and phrase absent from automatic audio sequence"
+    },
+    {
+      "id": "A03",
+      "status": "verified",
+      "reason": "actual shipped issubclass example executed successfully on Python 3.13.5"
+    },
+    {
+      "id": "A04",
+      "status": "partial",
+      "reason": "filter senses separated; dictionary search absent"
+    },
+    {
+      "id": "A05",
+      "status": "partial",
+      "reason": "actual getattr code succeeds on Python 3.13.5; declared Python 3.12 environment not run"
+    },
+    {
+      "id": "A06",
+      "status": "failed",
+      "reason": "old literal template removed but generalized pseudoexamples remain"
+    },
+    {
+      "id": "A07",
+      "status": "partial",
+      "reason": "150 units and 12 lesson source files exist; 22 secondary contexts and no lesson UI/package"
+    },
+    {
+      "id": "A08",
+      "status": "partial",
+      "reason": "literal pseudo-IPA/mixed alphabet cleanup exists; phonetic correctness not verified"
+    },
+    {
+      "id": "B01",
+      "status": "failed",
+      "reason": "automatic audio reveals Russian meaning before recall"
+    },
+    {
+      "id": "B02",
+      "status": "partial",
+      "reason": "separate state keys exist but only en_to_ru has an implemented review flow"
+    },
+    {
+      "id": "B03",
+      "status": "failed",
+      "reason": "dictation input and validation flow absent"
+    },
+    {
+      "id": "B04",
+      "status": "failed",
+      "reason": "cloze flow absent"
+    },
+    {
+      "id": "B05",
+      "status": "partial",
+      "reason": "scheduler/previews exist; no reference vectors; Hard violates maximum interval"
+    },
+    {
+      "id": "B06",
+      "status": "failed",
+      "reason": "no assisted attempt model; audio can reveal answer"
+    },
+    {
+      "id": "B07",
+      "status": "partial",
+      "reason": "autoplay itself does not rate cards; separate learning/listening statistics absent"
+    },
+    {
+      "id": "B08",
+      "status": "failed",
+      "reason": "due query/new limit not used by session"
+    },
+    {
+      "id": "B09",
+      "status": "failed",
+      "reason": "no idempotent atomic attempt or undo"
+    },
+    {
+      "id": "B10",
+      "status": "failed",
+      "reason": "session/attempt not persisted for process restoration"
+    },
+    {
+      "id": "C01",
+      "status": "failed",
+      "reason": "legacy two-cycle audio is repeated as a single-cycle file"
+    },
+    {
+      "id": "C02",
+      "status": "failed",
+      "reason": "script index and remaining pauses are not preserved"
+    },
+    {
+      "id": "C03",
+      "status": "failed",
+      "reason": "paused navigation can leave the previous currentCard"
+    },
+    {
+      "id": "C04",
+      "status": "partial",
+      "reason": "hashes exist for pilot; actual complete learning scripts/corpus not covered"
+    },
+    {
+      "id": "C05",
+      "status": "failed",
+      "reason": "corrupt cache reused and validator exits successfully on missing audio"
+    },
+    {
+      "id": "C06",
+      "status": "failed",
+      "reason": "build --check mutates content and overwrites editorial changes"
+    },
+    {
+      "id": "C07",
+      "status": "failed",
+      "reason": "provider errors publish incomplete/empty manifest without failure"
+    },
+    {
+      "id": "C08",
+      "status": "failed",
+      "reason": "background playback service/session absent"
+    },
+    {
+      "id": "C09",
+      "status": "failed",
+      "reason": "file read error treated as completion"
+    },
+    {
+      "id": "C10",
+      "status": "partial",
+      "reason": "Andrew configured; mandatory complete audio corpus absent"
+    },
+    {
+      "id": "D01",
+      "status": "failed",
+      "reason": "migration preferences name and status values differ from actual legacy source"
+    },
+    {
+      "id": "D02",
+      "status": "partial",
+      "reason": "migration flag exists; ID map not used/packaged and no full migration tests"
+    },
+    {
+      "id": "D03",
+      "status": "failed",
+      "reason": "backup export/import absent"
+    },
+    {
+      "id": "D04",
+      "status": "failed",
+      "reason": "invalid import transaction handling absent"
+    },
+    {
+      "id": "D05",
+      "status": "failed",
+      "reason": "150 added units lack playable fallback/full audio and required modes are absent"
+    },
+    {
+      "id": "D06",
+      "status": "not_run",
+      "reason": "TalkBack, font scale 200%, narrow device and keyboard not exercised on Android"
+    },
+    {
+      "id": "D07",
+      "status": "partial",
+      "reason": "applicationId preserved/versionCode increased; installed upgrade/signature path not verified"
+    },
+    {
+      "id": "D08",
+      "status": "partial",
+      "reason": "APK inspected and Python/JVM tests rerun; full clean Android build/lint/device tests not rerun"
+    }
+  ],
+  "apk": {
+    "path": "app_english_cards/app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 42944638,
+    "sha256": "ce7c547013cf96bda674d3df1e0f7de2da25d7f3d2258ebc528f283b8c0fa423",
+    "application_id": "com.english.flashcards",
+    "version_code": 2,
+    "version_name": "2.0.0",
+    "debug": true,
+    "min_sdk": 24,
+    "target_sdk": 35,
+    "content_matches_source": true
+  },
+  "source_code_modified_by_audit": false
+}

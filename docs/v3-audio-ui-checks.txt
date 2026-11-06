@@ -1,0 +1,3 @@
+PASS: microphone request and denial remain usable
+PASS: real explanation MP3 and pause
+PASS: real analogy MP3 and navigation cancellation

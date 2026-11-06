@@ -1,0 +1,17 @@
+PASS: detailed male-voice answer plays and restores paused at its position
+PASS: new comparison voice and exact-position transport control work
+PASS: changed-condition explanation voice restores with its revealed result
+Traceback (most recent call last):
+  File "/home/b00bs/my_less/lern_python/scripts/v5_media_ui.py", line 37, in <module>
+    resume();after=cp()['payload'];assert after['audio']['path']==before['audio']['path'];assert abs(after['audio']['position']-position)<1200
+    ~~~~~~^^
+  File "/home/b00bs/my_less/lern_python/scripts/v5_media_ui.py", line 23, in resume
+    def resume():start();reach('Продолжить с места остановки');time.sleep(1.2)
+                         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/b00bs/my_less/lern_python/scripts/v5_media_ui.py", line 20, in reach
+    scroll()
+    ~~~~~~^^
+  File "/home/b00bs/my_less/lern_python/scripts/v5_media_ui.py", line 15, in scroll
+    n=max((n for n in nodes().iter('node') if n.get('scrollable')=='true' and n.get('class')!='android.widget.HorizontalScrollView'),key=lambda n:int(re.findall(r'\d+',n.get('bounds'))[3])-int(re.findall(r'\d+',n.get('bounds'))[1]))
+ValueError: max() iterable argument is empty
+PASS: background detailed audio survives process death and restores through MediaSession paused

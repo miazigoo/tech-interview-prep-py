@@ -1,0 +1,4 @@
+PASS: foreground media service remains active after Home and screen off
+PASS: MediaSession pause command
+PASS: MediaSession play and next commands with screen off
+PASS: stop removes foreground service

@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.Interview" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">#101218</item>
+        <item name="android:statusBarColor">#101218</item>
+        <item name="android:navigationBarColor">#101218</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">#B8A0FF</item>
+        <item name="colorOnPrimary">#20163A</item>
+        <item name="colorSurface">#1B1E28</item>
+        <item name="colorOnSurface">#F4F2FA</item>
+        <item name="android:colorAccent">#B8A0FF</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

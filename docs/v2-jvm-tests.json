@@ -1,0 +1,23 @@
+[
+  {
+    "name": "com.python.interviewcards.LearningQueueTest",
+    "tests": "6",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.python.interviewcards.LearningSessionTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.python.interviewcards.PlaybackPlanTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  }
+]
